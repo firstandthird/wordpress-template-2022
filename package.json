@@ -1,6 +1,6 @@
 {
   "name": "wordpress-template-2022",
-  "version": "1.0.0",
+  "version": "1.22.19",
   "description": "A new WordPress template for First+Third.",
   "main": "index.js",
   "scripts": {
