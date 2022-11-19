@@ -4,7 +4,8 @@
   "description": "A new WordPress template for First+Third.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp --prod=false",
+    "build": "gulp --prod=true"
   },
   "keywords": [
     "wordpress",
@@ -12,5 +13,17 @@
     "firstandthird"
   ],
   "author": "First+Third",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/register": "^7.18.9",
+    "eslint": "^8.28.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-postcss": "^9.0.1",
+    "yargs": "^17.6.2"
+  }
 }
