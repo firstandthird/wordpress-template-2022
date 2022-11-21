@@ -1,11 +1,10 @@
 {
   "name": "wordpress-template-2022",
-  "version": "1.22.19",
+  "version": "1.0.0",
   "description": "A new WordPress template for First+Third.",
   "main": "index.js",
   "scripts": {
-    "dev": "gulp --prod=false",
-    "build": "gulp --prod=true"
+    "build": "rm -rf wp-content/themes/ft-theme/dist && postcss wp-content/themes/ft-theme/src/css/index.css -o wp-content/themes/ft-theme/dist/bundle.css && npx spack"
   },
   "keywords": [
     "wordpress",
@@ -15,15 +14,19 @@
   "author": "First+Third",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.20.2",
-    "@babel/preset-env": "^7.20.2",
-    "@babel/register": "^7.18.9",
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.3.19",
+    "autoprefixer": "^10.4.13",
     "eslint": "^8.28.0",
     "eslint-config-airbnb": "^19.0.4",
-    "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-if": "^3.0.0",
-    "gulp-postcss": "^9.0.1",
-    "yargs": "^17.6.2"
+    "postcss": "^8.4.19",
+    "postcss-cli": "^10.0.0",
+    "postcss-minify": "^1.1.0",
+    "postcss-nested": "^6.0.0",
+    "tailwindcss": "^3.2.4"
+  },
+  "volta": {
+    "node": "18.12.1",
+    "yarn": "1.22.19"
   }
 }
