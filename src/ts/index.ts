@@ -1,0 +1,3 @@
+/**
+ * TypeScript required for theme.
+ */

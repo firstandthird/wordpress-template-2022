@@ -2,8 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-	h1 {
-		font-size: 100px;
-	}
-}
+/* Default Tailwind CSS imports. */

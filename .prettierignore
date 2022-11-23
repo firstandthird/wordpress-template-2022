@@ -1,0 +1,9 @@
+.gitignore
+.git/
+
+.env
+node_modules/
+
+wp-content/themes/twenty*
+wp-content/themes/index.php
+wp-content/plugins/akismet
