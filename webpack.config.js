@@ -5,7 +5,7 @@ const DependencyExtractionWebpackPlugin = require("@wordpress/dependency-extract
 
 module.exports = {
   mode: "production",
-  entry: { bundle: ["./src/ts/index.ts", "./src/css/index.css"] },
+  entry: { bundle: ["./src/index.ts", "./src/index.css"] },
   output: {
     filename: "[name].js",
     path: path.resolve(__dirname, "./wp-content/themes/ft-theme/dist"),

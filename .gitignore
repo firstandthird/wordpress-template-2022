@@ -21,14 +21,14 @@ wp-content/cache/*
 wp-content/cache/supercache/*
 
 # theme and plugin files
-/wp-content/index.php
-/wp-content/themes/twenty*
-/wp-content/themes/index.php
-/wp-content/themes/**/dist
-/wp-content/mu-plugins
-/wp-content/mu-plugins/**/*
-/wp-content/plugins
-/wp-content/plugins/**/*
+wp-content/index.php
+wp-content/themes/twenty*
+wp-content/themes/index.php
+wp-content/themes/**/dist
+wp-content/plugins
+wp-content/plugins/**/*
+wp-content/mu-plugins/*
+!wp-content/mu-plugins/ft-blocks
 
 # large/disallowed file types
 # a CDN should be used for these

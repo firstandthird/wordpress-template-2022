@@ -1,5 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "./reset.css";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-/* Default Tailwind CSS imports. */
+/* global theme configurations */
+
+@layer base {
+  /* default styles */
+}
+
+@layer components {
+  /* blocks and modules */
+}
+
+@layer utilities {
+  /* various overrides */
+}
