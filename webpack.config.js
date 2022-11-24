@@ -19,6 +19,7 @@ module.exports = {
       {
         test: /\.([cm]?ts|tsx)$/,
         loader: "ts-loader",
+        exclude: /node_modules/,
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
