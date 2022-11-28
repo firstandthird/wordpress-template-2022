@@ -514,6 +514,16 @@ array-union@^2.1.0:
   resolved "https://registry.yarnpkg.com/array-union/-/array-union-2.1.0.tgz#b798420adbeb1de828d84acd8a2e23d3efe85e8d"
   integrity sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw==
 
+attrobj@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/attrobj/-/attrobj-3.1.0.tgz#6ab50a1701326182381718d370244f3c3cae0e48"
+  integrity sha512-YFN+wZSEgER2w5IdIkmNkPiGqi6lRrNKL+VPl+7WnAPenZvnPC6bEmQuxka06Ilwx265x/K6QRh9W5Klav738Q==
+
+aug@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/aug/-/aug-4.0.0.tgz#ac90ed6e8f331f7ab99fe0fc2742783754480a0e"
+  integrity sha512-2cr7AHg5B+Cbjma7qhs+DZbKznzKwpkjfSCb48WVJfEF/+Hwxsu4GPGuqUblt/0gVYBiqdeAIrerlTjt8edyKg==
+
 autoprefixer@^10.4.13:
   version "10.4.13"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.4.13.tgz#b5136b59930209a321e9fa3dca2e7c4d223e83a8"
@@ -879,6 +889,11 @@ dom-serializer@^1.0.1:
     domhandler "^4.2.0"
     entities "^2.0.0"
 
+domassist@^2.2.0, domassist@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/domassist/-/domassist-2.3.1.tgz#905fbdd3d0786bf8163fa8fbb7ae460123b86a04"
+  integrity sha512-uiZ+t0/mA01RBxn0VNbAUfuv2OVU7gGa/GocBRit8/ALHDB8JijEyKHurUKHX7yHzUuVe87eghQ0m7vEIj7nvQ==
+
 domelementtype@^2.0.1, domelementtype@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-2.3.0.tgz#5c45e8e869952626331d7aab326d01daf65d589d"
@@ -890,6 +905,15 @@ domhandler@^4.2.0, domhandler@^4.3.1:
   integrity sha512-GrwoxYN+uWlzO8uhUXRl0P+kHE4GtVPfYzVLcUxPL7KNdHKj66vvlhiweIHqYYXWlw+T8iLMp42Lm67ghw4WMQ==
   dependencies:
     domelementtype "^2.2.0"
+
+domodule@^8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/domodule/-/domodule-8.1.0.tgz#362cd7dd913c50bfd3c8a9cbb907ae6cd46bb813"
+  integrity sha512-ION9hZ7tFVNkfLSx2t8gOM5YweUNb3jUezD4JXR7Vqb8S9pZt4kyuCJE25JvxozdkDXBIE9RUUAxDaOPUQV8Vw==
+  dependencies:
+    attrobj "^3.1.0"
+    aug "^4.0.0"
+    domassist "^2.2.0"
 
 domutils@^2.8.0:
   version "2.8.0"

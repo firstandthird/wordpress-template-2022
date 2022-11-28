@@ -7,13 +7,13 @@
     "template",
     "firstandthird"
   ],
-  "homepage": "https://github.com/firstandthird/wordpress-project-template#readme",
+  "homepage": "https://github.com/firstandthird/wordpress-template-2022#readme",
   "bugs": {
-    "url": "https://github.com/firstandthird/wordpress-project-template/issues"
+    "url": "https://github.com/firstandthird/wordpress-template-2022/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/firstandthird/wordpress-project-template.git"
+    "url": "git+https://github.com/firstandthird/wordpress-template-2022.git"
   },
   "license": "ISC",
   "author": "First+Third",
@@ -22,6 +22,10 @@
     "compose": "docker-compose up -d",
     "decompose": "docker-compose down",
     "dev": "webpack watch --progress --config webpack.dev.js"
+  },
+  "dependencies": {
+    "domassist": "^2.3.1",
+    "domodule": "^8.1.0"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
@@ -50,6 +54,5 @@
   "volta": {
     "node": "18.12.1",
     "yarn": "1.22.19"
-  },
-  "dependencies": {}
+  }
 }
