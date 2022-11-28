@@ -1,15 +1,18 @@
-on: [push]
+on:
+  push:
+  pull_request:
 
 jobs:
-  hello_world_job:
+  tsc:
+    name: tsc
     runs-on: ubuntu-latest
-    name: A job to say hello
     steps:
-      - name: Hello world action step
-        id: hello
-        uses: ApplianceJohn/action-ts-compile@v1.1
+      - uses: actions/checkout@v1
+      - name: install node v16
+        uses: actions/setup-node@v1
         with:
-          who-to-greet: "Mona the Octocat"
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+          node-version: 16
+      - name: yarn install
+        run: yarn install
+      - name: tsc
+        uses: icrawl/action-tsc@v1
