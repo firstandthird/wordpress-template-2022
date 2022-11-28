@@ -6,7 +6,16 @@
     "jsx": "react",
     "allowJs": true,
     "moduleResolution": "node",
-    "sourceMap": true
+    "sourceMap": true,
+    "strict": true,
+    "inlineSources": true,
+    "sourceRoot": "src",
+    "outDir": "wp-content/themes/ft-theme/dist/",
+    "declaration": false,
+    "removeComments": false,
+    "alwaysStrict": true,
+    "allowSyntheticDefaultImports": true,
+    "pretty": true
   },
   "include": ["src/ts/**/*", "src/index.ts"]
 }
