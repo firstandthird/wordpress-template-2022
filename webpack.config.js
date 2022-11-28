@@ -8,7 +8,10 @@ module.exports = {
   entry: { bundle: ["./src/index.ts", "./src/index.css"] },
   output: {
     filename: "[name].js",
-    path: path.resolve(__dirname, "./wp-content/themes/ft-theme/dist"),
+    path: path.resolve(
+      __dirname,
+      "./wp-content/themes/client-theme-folder/dist"
+    ),
   },
   module: {
     rules: [

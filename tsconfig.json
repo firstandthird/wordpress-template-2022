@@ -10,7 +10,7 @@
     "strict": true,
     "inlineSources": true,
     "sourceRoot": "src",
-    "outDir": "wp-content/themes/ft-theme/dist/",
+    "outDir": "wp-content/themes/client-theme-folder/distolder/dist/",
     "declaration": false,
     "removeComments": false,
     "alwaysStrict": true,

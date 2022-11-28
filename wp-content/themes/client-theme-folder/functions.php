@@ -1,7 +1,7 @@
 <?php
 function load_theme_scripts() {
-  $script_path       = './wp-content/themes/ft-theme/dist/bundle.js';
-  $script_asset_path = './wp-content/themes/ft-theme/dist/bundle.asset.php';
+  $script_path       = './wp-content/themes/client-theme-folder/dist/bundle.js';
+  $script_asset_path = './wp-content/themes/client-theme-folder/dist/bundle.asset.php';
   $script_asset      = file_exists( $script_asset_path )
   ? require $script_asset_path
   : array(
