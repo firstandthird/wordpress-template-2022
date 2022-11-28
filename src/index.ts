@@ -1,3 +1,1 @@
-import example from "./ts/example";
-
-example("fixed");
+// Amazing things in store...
