@@ -1,3 +1,3 @@
 import example from "./ts/example";
 
-example(72);
+example("fixed it");
