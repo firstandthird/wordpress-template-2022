@@ -1,7 +1,9 @@
 "use strict";
 const path = require("path");
 
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const DependencyExtractionWebpackPlugin = require("@wordpress/dependency-extraction-webpack-plugin");
+const RemoveEmptyScriptsPlugin = require("webpack-remove-empty-scripts");
 
 module.exports = {
   mode: "production",
@@ -16,13 +18,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/i,
+        test: /\.css$/,
         use: ["style-loader", "css-loader", "postcss-loader"],
       },
       {
         test: /\.([cm]?ts|tsx)$/,
         loader: "ts-loader",
-        exclude: /node_modules/,
+        exclude: /node_modules|vendor/,
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -38,5 +40,18 @@ module.exports = {
       ".mjs": [".mjs", ".mts"],
     },
   },
-  plugins: [new DependencyExtractionWebpackPlugin()],
+  plugins: [
+    new CleanWebpackPlugin(),
+    new DependencyExtractionWebpackPlugin({
+      injectPolyfill: false,
+    }),
+    new RemoveEmptyScriptsPlugin(),
+  ],
+  watchOptions: {
+    ignored: [
+      "**/client-theme-folder/dist/**/*.*",
+      "**/node_modules",
+      "**/vendors",
+    ],
+  },
 };

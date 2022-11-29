@@ -1,4 +1,5 @@
 const Forms = require("@tailwindcss/forms");
+const LineClamp = require("@tailwindcss/line-clamp");
 
 module.exports = {
   corePlugins: {
@@ -14,8 +15,8 @@ module.exports = {
     preflight: false,
   },
   content: [
+    "./src/**/*.{css,js,ts}",
     "./wp-content/themes/client-theme-folder/**/*.{php,css,js,ts}",
-    "./src/**/*.{php,css,js,ts}",
   ],
   safelist: [
     /* Prevent editor-specific styles from being purged */
@@ -26,5 +27,5 @@ module.exports = {
     "block-editor-block-list__layout",
   ],
   theme: {},
-  plugins: [Forms],
+  plugins: [Forms, LineClamp],
 };

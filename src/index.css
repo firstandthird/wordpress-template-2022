@@ -1,3 +1,2 @@
-@import "./css/index.css";
-
-/* The use of @layer directives in your CSS is strongly encouraged. */
+@import "./css/global.css";
+/* Add new files under /src/css */
