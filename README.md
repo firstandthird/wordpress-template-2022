@@ -6,7 +6,7 @@ This aims to be a quick and easy setup for a new client theme. The intention is 
 
 ## What's included
 
-- Docker for MySQL and WordPress so you can get the project up and running with `yarn compose`.
+- Docker for MySQL and WordPress so you can get the project up and running with `npm run compose`.
 - [Tailwind](https://tailwindcss.com/) to handle the front-end files.
 - [ESLint](https://eslint.org/) and [Prettier](https://stylelint.io/) configs.
 - GitHub action to run TypeScript compilation (`tsc`) on a pull request.
@@ -14,7 +14,7 @@ This aims to be a quick and easy setup for a new client theme. The intention is 
 - `.gitignore` ready.
 - Composer filled with standard packages.
 - CSS and TS are ready to be used on WordPress admin so that Tailwind will look fine within Gutenberg
-- [DOModules](https://github.com/firstandthird/domodule) and DOMAssist to aid with JS actions.
+- [DOModules](https://github.com/firstandthird/domodule) and [DOMAssist](https://github.com/firstandthird/domassist) to aid with JS actions.
 
 Once the template is turned into a new repository, there are a few things you'll need to do:
 
@@ -48,7 +48,7 @@ There are a few requirements to develop a new theme or contribute back to the pr
 - [Git](https://git-scm.com/) for version control.
 - [Composer](https://getcomposer.org/) for managing PHP dependencies.
 - [Node 18+](https://nodejs.org).
-- [Yarn](https://yarnpkg.com/en/) for managing JS dependencies.
+- [NPM](https://www.npmjs.com/) for managing JS dependencies.
 
 ## Quick Start
 
@@ -57,13 +57,13 @@ There are a few requirements to develop a new theme or contribute back to the pr
 ```bash
 $ composer install
 $ composer update
-$ yarn
-$ yarn update
-$ yarn dev
-$ yarn compose
+$ npm install
+$ npm update
+$ npm run compose
+$ npm run dev
 ```
 
-If you want to develop and watch the assets, open another terminal and run `yarn dev` instead so it keeps watching and refreshing files.
+If you want to develop and watch the assets, open another terminal and run `npm run dev` instead so it keeps watching and refreshing files.
 
 After installing Docker, the website will be available on port `80`.
 
@@ -75,4 +75,4 @@ Create a page and call it "Home".
 
 http://localhost/wp-admin/post-new.php?post_type=page
 
-Then go to http://localhost/wp-admin/options-reading.php and set **Your homepage displays** to **A static page** and select your Home page.
+Then go to http://localhost/wp-admin/options-reading.php, set **Your homepage displays** to **A static page**, and select your Home page.
