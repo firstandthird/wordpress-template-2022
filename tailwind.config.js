@@ -1,31 +1,40 @@
-const Forms = require("@tailwindcss/forms");
-const LineClamp = require("@tailwindcss/line-clamp");
+const forms = require("@tailwindcss/forms");
+const lineClamp = require("@tailwindcss/line-clamp");
+const theme = require("./wp-content/themes/base-theme/theme.json");
+const tailpress = require("@jeffreyvr/tailwindcss-tailpress");
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  corePlugins: {
-    /*
-     * Preflight injects this file https://github.com/tailwindlabs/tailwindcss/blob/master/src/css/preflight.css which
-     * would normally be fine but Gutenberg has issues with styles to raw buttons and anchors, and they need to be
-     * prefixed with :where(:not(.components-button)) and where(:not(.components-external-link)) respectively so the
-     * styles don't end up leaking out of the editor.
-     *
-     * See src/css/reset.css which should be a verbatim copy of Tailwind's
-     * but with those :where applied.
-     */
-    preflight: false,
-  },
   content: [
-    "./src/**/*.{css,js,ts}",
-    "./wp-content/themes/client-theme-folder/**/*.{php,css,js,ts}",
+    "./wp-content/themes/**/*.php",
+    "./src/css/*.css",
+    "./src/js/*.js",
+    "./safelist.txt",
   ],
-  safelist: [
-    /* Prevent editor-specific styles from being purged */
-    "editor-post-title__block",
-    "editor-post-title__input",
-    "entry-content",
-    "entry-title",
-    "block-editor-block-list__layout",
-  ],
-  theme: {},
-  plugins: [Forms, LineClamp],
+  theme: {
+    container: {
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "0rem",
+      },
+    },
+    extend: {
+      colors: tailpress.colorMapper(
+        tailpress.theme("settings.color.palette", theme)
+      ),
+      fontSize: tailpress.fontSizeMapper(
+        tailpress.theme("settings.typography.fontSizes", theme)
+      ),
+    },
+    screens: {
+      xs: "480px",
+      sm: "600px",
+      md: "782px",
+      lg: tailpress.theme("settings.layout.contentSize", theme),
+      xl: tailpress.theme("settings.layout.wideSize", theme),
+      "2xl": "1440px",
+    },
+  },
+  plugins: [tailpress.tailwind, forms, lineClamp],
 };
