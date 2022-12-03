@@ -24,7 +24,8 @@ wp-content/cache/supercache/*
 wp-content/index.php
 wp-content/themes/twenty*
 wp-content/themes/index.php
-wp-content/themes/**/dist
+wp-content/themes/**/css
+wp-content/themes/**/js
 wp-content/plugins
 wp-content/plugins/**/*
 wp-content/mu-plugins/*
