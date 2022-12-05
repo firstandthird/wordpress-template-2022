@@ -22,6 +22,7 @@
     "build:css-app": "cross-env NODE_ENV=development tailwindcss -i ./src/css/app.css -o ./wp-content/themes/base-theme/css/app.css --postcss --minify",
     "build:css-editor": "cross-env NODE_ENV=development tailwindcss -i ./src/css/editor-style.css -o ./wp-content/themes/base-theme/css/editor-style.css --postcss --minify",
     "build:js": "cross-env NODE_ENV=development ./node_modules/.bin/esbuild ./src/js/app.js --bundle --outfile=./wp-content/themes/base-theme/js/app.js --minify",
+    "initialize": "concurrently \"composer update\" \"npm install\" \"cp .env-example .env\" && docker-compose up -d",
     "compose": "docker-compose up -d",
     "decompose": "docker-compose down",
     "watch": "cross-env NODE_ENV=development concurrently \"npm run watch:css-app\" \"npm run watch:css-editor\" \"npm run watch:js\"",
