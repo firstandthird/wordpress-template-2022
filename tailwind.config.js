@@ -1,7 +1,7 @@
 const forms = require("@tailwindcss/forms");
 const lineClamp = require("@tailwindcss/line-clamp");
-const theme = require("./wp-content/themes/base-theme/theme.json");
 const tailpress = require("@jeffreyvr/tailwindcss-tailpress");
+const clientTheme = require("./wp-content/themes/client-theme/theme.json");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -19,21 +19,25 @@ module.exports = {
         lg: "0rem",
       },
     },
+    fontFamily: {
+      sans: ["Catamaran", "Helvetica", "Arial", "sans-serif"],
+      heading: ["Outfit", "Helvetica", "Arial", "sans-serif"],
+    },
     extend: {
       colors: tailpress.colorMapper(
-        tailpress.theme("settings.color.palette", theme)
+        tailpress.theme("settings.color.palette", clientTheme)
       ),
       fontSize: tailpress.fontSizeMapper(
-        tailpress.theme("settings.typography.fontSizes", theme)
+        tailpress.theme("settings.typography.fontSizes", clientTheme)
       ),
     },
     screens: {
-      xs: "480px",
-      sm: "600px",
-      md: "782px",
-      lg: tailpress.theme("settings.layout.contentSize", theme),
-      xl: tailpress.theme("settings.layout.wideSize", theme),
-      "2xl": "1440px",
+      xs: "320px",
+      sm: "640px",
+      md: "768px",
+      lg: tailpress.theme("settings.layout.contentSize", clientTheme),
+      xl: tailpress.theme("settings.layout.wideSize", clientTheme),
+      "2xl": "1536px",
     },
   },
   plugins: [tailpress.tailwind, forms, lineClamp],
