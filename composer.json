@@ -30,7 +30,7 @@
         "type": "wordpress-muplugin",
         "dist": {
           "type": "zip",
-          "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t={%VERSION}"
+          "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t={%ACF_VERSION}"
         },
         "require": {
           "composer/installers": "^1.4",
@@ -56,6 +56,7 @@
     "installer-paths": {
       "wp-content/mu-plugins/{$name}/": [
         "type:wordpress-muplugin",
+        "advanced-custom-fields/advanced-custom-fields-pro",
         "wpackagist-plugin/svg-support",
         "wpackagist-plugin/wordpress-seo"
       ],

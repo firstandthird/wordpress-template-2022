@@ -1,7 +1,7 @@
 services:
   db:
     image: mariadb:10.6.4-focal
-    command: '--default-authentication-plugin=mysql_native_password'
+    command: "--default-authentication-plugin=mysql_native_password"
     volumes:
       - db_data:/var/lib/mysql
     restart: always
@@ -16,9 +16,9 @@ services:
   wordpress:
     image: wordpress:latest
     volumes:
-      - './wp-content/mu-plugins:/var/www/html/wp-content/mu-plugins'
-      - './wp-content/plugins:/var/www/html/wp-content/plugins'
-      - './wp-content/themes:/var/www/html/wp-content/themes'
+      - "./wp-content/mu-plugins:/var/www/html/wp-content/mu-plugins"
+      - "./wp-content/plugins:/var/www/html/wp-content/plugins"
+      - "./wp-content/themes:/var/www/html/wp-content/themes"
     ports:
       - 80:80
     restart: always
