@@ -53,7 +53,7 @@ There are a few requirements to develop a new theme or contribute back to the pr
 
 ```bash
 $ npm install
-$ npm run initialize -- acf_key={Paste ACF Pro license key}
+$ npm run initialize --acf-key={Paste ACF Pro license key}
 $ docker compose up -d
 ```
 
