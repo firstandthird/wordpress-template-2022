@@ -2,38 +2,34 @@
 
 Welcome!
 
-This aims to be a quick and easy setup for a new client theme. The intention is to click the "Use this template" button and start hacking away.
+This template contains all you need to start the next great First+Third project. Click **Use this template** and start hacking away!
 
 ## What's included
 
-- Docker for MySQL and WordPress so you can get the project up and running with `npm run compose`.
-- [Tailwind](https://tailwindcss.com/) to handle the front-end files.
-- [ESLint](https://eslint.org/) and [Prettier](https://stylelint.io/) configs.
-- GitHub action to run TypeScript compilation (`tsc`) on a pull request.
-- `.env-example` filled with sensible defaults.
-- `.gitignore` ready.
-- Composer filled with standard packages.
-- CSS and TS are ready to be used on WordPress admin so that Tailwind will look fine within Gutenberg
-- [DOModules](https://github.com/firstandthird/domodule) and [DOMAssist](https://github.com/firstandthird/domassist) to aid with JS actions.
+- A base theme forked from [TailPress](#), providing frictionless [Tailwind CSS](#) support for scripts, styles, and templates.
+- Support for modern CSS and JS development syntax with [PostCSS](#) and [ESBuild](#).
+- A no-nonsense, CLI-exclusive setup and build process.
+- [Docker](#) integration to keep local dependencies tight-knit.
+- Default configs for [ESLint](#), [Prettier](#), and [PHPCS](#).
 
-Once the template is turned into a new repository, there are a few things you'll need to do:
+Once this template is turned into a new repository, there are a few things you'll need to do:
 
 ## Steps
 
-- Change "Client Name" to something sensible.
+- Replace **Client Name** in the below documentation.
+- In `/wp-content/themes/client-theme`:
+  - Change the folder name to the client's name or an appropriate, project-specific title.
+  - Replace mentions of `client_theme` and `client-theme` in the `functions.php` file.
+  - Update the `Theme Name` and `Text Domain` in `style.css`.
 - On `package.json`:
+  - Update the package `name` to be the client's theme slug.
   - Search `https://github.com/firstandthird/wordpress-template-2022` and replace it with the new repo's URL.
-  - Update the project name to be the client's theme.
-- Rename `wp-content/themes/client-theme-folder` to the client's and then search and replace `client-theme-folder` throughout the project. It should be present in:
-  - `tailwind.config.js`
-  - `tsconfig.json`
-  - `webpack.config.js`
-  - `functions.php`
-- Update `Client Name` within the theme's folder on the `style.css` file to be something sensible.
 
 Happy coding!
 
-**IMPORTANT: Remove the divider and preceding content after cloning.**
+---
+
+> **REMOVE THE ABOVE INFORMATION AND THIS DIVIDER BEFORE DEPLOYMENT!**
 
 ---
 
@@ -46,33 +42,34 @@ WordPress theme for **Client Name**.
 There are a few requirements to develop a new theme or contribute back to the project:
 
 - [Git](https://git-scm.com/) for version control.
-- [Composer](https://getcomposer.org/) for managing PHP dependencies.
 - [Node 18+](https://nodejs.org).
 - [NPM](https://www.npmjs.com/) for managing JS dependencies.
+- [Composer](https://getcomposer.org/) for managing PHP and WordPress packages.
+- [Docker](#) to create a local development environment.
 
 ## Quick Start
 
-**IMPORTANT:** You must create a `.env` file that follows what's shown on `.env-example`.
+### Install all dependencies and launch the instance
 
 ```bash
-$ composer install
-$ composer update
 $ npm install
-$ npm update
-$ npm run compose
-$ npm run dev
+$ npm run initialize -- acf_key={Paste ACF Pro license key}
+$ docker compose up -d
 ```
 
-If you want to develop and watch the assets, open another terminal and run `npm run dev` instead so it keeps watching and refreshing files.
+Several things are handled during this step:
 
-After installing Docker, the website will be available on port `80`.
+- `.env` is created based on the example file.
+- All NPM and Composer packages are installed and updated.
+- ACF Pro is validated and installed.
+- Base theme styles and scripts are compiled.
 
-Access `localhost`, and it'll prompt you to install WordPress. Once installed, you'll need to log in and activate the theme. Use your setting for the variable within `SITE_URL`.
+### Set up the WordPress admin
 
-http://localhost/wp-admin/themes.php
+1. Access the Docker instance by going to `localhost`. If you do not see the website, check the **Ports** column in Docker desktop or list running containers in your CLI to find the correct port to use (e.g. 80, 3000, 8888).
 
-Create a page and call it "Home".
+2. Follow the WordPress installation steps, log into your account, and change to the Client Theme.
 
-http://localhost/wp-admin/post-new.php?post_type=page
+3. Create a page and call it "Home".
 
-Then go to http://localhost/wp-admin/options-reading.php, set **Your homepage displays** to **A static page**, and select your Home page.
+4. Go to [Reading Options](http://localhost/wp-admin/options-reading.php), set **Your homepage displays** to **A static page**, and select your new Home page.
