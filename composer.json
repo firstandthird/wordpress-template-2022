@@ -1,5 +1,14 @@
 {
   "name": "firstandthird/wordpress-template-2022",
+  "type": "project",
+  "config": {
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "composer/installers": true,
+      "ffraenz/private-composer-installer": true
+    }
+  },
   "repositories": [
     {
       "type": "composer",
@@ -8,18 +17,35 @@
         "wpackagist-plugin/*",
         "wpackagist-theme/*"
       ]
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/pronamic/gravityforms"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "6.0.5",
+        "type": "wordpress-muplugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t={%ACF_VERSION}"
+        },
+        "require": {
+          "composer/installers": "^1.4",
+          "ffraenz/private-composer-installer": "^5.0"
+        }
+      }
     }
   ],
-  "config": {
-    "allow-plugins": {
-      "dealerdirect/phpcodesniffer-composer-installer": true,
-      "composer/installers": true
-    }
-  },
   "require": {
     "php": ">=5.4",
     "squizlabs/php_codesniffer": "^3.7.1",
-    "wpackagist-plugin/svg-support": "dev-trunk"
+    "wpackagist-plugin/svg-support": "dev-trunk",
+    "wpackagist-plugin/wordpress-seo": "dev-trunk",
+    "advanced-custom-fields/advanced-custom-fields-pro": "*",
+    "pronamic/gravityforms": "2.6.8"
   },
   "require-dev": {
     "phpcompatibility/php-compatibility": "^9.0",
@@ -29,7 +55,10 @@
   "extra": {
     "installer-paths": {
       "wp-content/mu-plugins/{$name}/": [
-        "wpackagist-plugin/svg-support"
+        "type:wordpress-muplugin",
+        "advanced-custom-fields/advanced-custom-fields-pro",
+        "wpackagist-plugin/svg-support",
+        "wpackagist-plugin/wordpress-seo"
       ],
       "wp-content/themes/{$name}": [
         "type:wordpress-theme"
