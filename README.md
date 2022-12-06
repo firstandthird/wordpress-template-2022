@@ -6,11 +6,11 @@ This template contains all you need to start the next great First+Third project.
 
 ## What's included
 
-- A base theme forked from [TailPress](#), providing frictionless [Tailwind CSS](#) support for scripts, styles, and templates.
-- Support for modern CSS and JS development syntax with [PostCSS](#) and [ESBuild](#).
+- A base theme forked from [TailPress](https://tailpress.io/), providing frictionless [Tailwind CSS](https://tailwindcss.com/) support for scripts, styles, and templates.
+- Support for modern CSS and JS development syntax with [PostCSS](https://postcss.org/) and [ESBuild](https://esbuild.github.io/).
 - A no-nonsense, CLI-exclusive setup and build process.
-- [Docker](#) integration to keep local dependencies tight-knit.
-- Default configs for [ESLint](#), [Prettier](#), and [PHPCS](#).
+- [Docker](https://www.docker.com/) integration to keep local dependencies tight-knit.
+- Default configs for [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), and [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer).
 
 Once this template is turned into a new repository, there are a few things you'll need to do:
 
@@ -45,7 +45,7 @@ There are a few requirements to develop a new theme or contribute back to the pr
 - [Node 18+](https://nodejs.org).
 - [NPM](https://www.npmjs.com/) for managing JS dependencies.
 - [Composer](https://getcomposer.org/) for managing PHP and WordPress packages.
-- [Docker](#) to create a local development environment.
+- [Docker](https://www.docker.com/) to create a local development environment.
 
 ## Quick Start
 
@@ -66,7 +66,7 @@ Several things are handled during this step:
 
 ### Set up the WordPress admin
 
-1. Access the Docker instance by going to `localhost`. If you do not see the website, check the **Ports** column in Docker desktop or list running containers in your CLI to find the correct port to use (e.g. 80, 3000, 8888).
+1. Access the Docker instance by going to [localhost](http://localhost/). If you do not see the website, check the **Ports** column in Docker desktop or list running containers in your CLI to find the correct port to use (e.g. 80, 3000, 8888).
 
 2. Follow the WordPress installation steps, log into your account, and change to the Client Theme.
 
