@@ -29,9 +29,7 @@ wp-content/themes/**/js
 !wp-content/themes/base-theme/css
 !wp-content/themes/base-theme/js
 wp-content/plugins
-wp-content/plugins/**/*
-wp-content/mu-plugins/*
-!wp-content/mu-plugins/ft-blocks
+wp-content/mu-plugins
 
 # large/disallowed file types
 # a CDN should be used for these
