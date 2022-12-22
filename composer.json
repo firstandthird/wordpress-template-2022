@@ -27,7 +27,7 @@
       "package": {
         "name": "advanced-custom-fields/advanced-custom-fields-pro",
         "version": "6.0.5",
-        "type": "wordpress-muplugin",
+        "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
           "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t={%ACF_VERSION}"
@@ -58,10 +58,7 @@
     "installer-paths": {
       "wp-content/mu-plugins/{$name}/": [
         "type:wordpress-muplugin",
-        "advanced-custom-fields/advanced-custom-fields-pro",
-        "wpackagist-plugin/acf-extended",
-        "wpackagist-plugin/svg-support",
-        "wpackagist-plugin/wordpress-seo"
+        "wpackagist-plugin/svg-support"
       ],
       "wp-content/themes/{$name}": [
         "type:wordpress-theme"
