@@ -11,4 +11,4 @@ jobs:
           php-version: "8.2"
           tools: cs2pr, phpcs
       - name: Run phpcs
-        run: phpcs -q --report=checkstyle --ignore=*/twentytwenty* /wp-content/themes/
+        run: phpcs -q --report=checkstyle --ignore=*/twentytwenty* ./wp-content
