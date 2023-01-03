@@ -1,7 +1,7 @@
 const forms = require("@tailwindcss/forms");
 const lineClamp = require("@tailwindcss/line-clamp");
 const tailpress = require("@jeffreyvr/tailwindcss-tailpress");
-const clientTheme = require("./wp-content/themes/client-theme/theme.json");
+const clientTheme = require("./wp-content/themes/ft-client-theme/theme.json");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {

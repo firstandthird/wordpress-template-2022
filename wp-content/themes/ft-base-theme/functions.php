@@ -30,22 +30,9 @@ function base_theme_setup() {
   add_theme_support( 'wp-block-styles' );
 
   add_theme_support( 'editor-styles' );
-  add_editor_style( 'css/editor-style.css' );
 }
 
 add_action( 'after_setup_theme', 'base_theme_setup' );
-
-/**
- * Enqueue theme assets.
- */
-function base_theme_enqueue_scripts() {
-  $theme = wp_get_theme();
-
-  wp_enqueue_style( 'tailpress', base_theme_asset( 'css/app.css' ), array(), $theme->get( 'Version' ) );
-  wp_enqueue_script( 'tailpress', base_theme_asset( 'js/app.js' ), array(), $theme->get( 'Version' ), true );
-}
-
-add_action( 'wp_enqueue_scripts', 'base_theme_enqueue_scripts' );
 
 /**
  * Get asset path.
