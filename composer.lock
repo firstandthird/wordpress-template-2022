@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6116e7c939cdf9b46f7db9e5d4d09bb1",
+    "content-hash": "149152e74afd2b88353c0928837710e3",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -783,6 +783,44 @@
             "time": "2022-10-16T01:01:54+00:00"
         },
         {
+            "name": "wpackagist-plugin/acf-extended",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/acf-extended/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/acf-extended.zip?timestamp=1670098739"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/acf-extended/",
+            "time": "2022-12-03T20:18:59+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/redirection",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/redirection/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/redirection.zip?timestamp=1670655125"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/redirection/",
+            "time": "2022-12-10T06:52:05+00:00"
+        },
+        {
             "name": "wpackagist-plugin/svg-support",
             "version": "dev-trunk",
             "source": {
@@ -792,14 +830,14 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/svg-support.zip?timestamp=1668723033"
+                "url": "https://downloads.wordpress.org/plugin/svg-support.zip?timestamp=1670887547"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/svg-support/",
-            "time": "2022-11-17T22:10:33+00:00"
+            "time": "2022-12-12T23:25:47+00:00"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
@@ -811,14 +849,14 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.zip?timestamp=1670257385"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.zip?timestamp=1672755127"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-seo/",
-            "time": "2022-12-05T16:23:05+00:00"
+            "time": "2023-01-03T14:12:07+00:00"
         }
     ],
     "packages-dev": [
@@ -1079,7 +1117,9 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "wpackagist-plugin/svg-support": 20,
-        "wpackagist-plugin/wordpress-seo": 20
+        "wpackagist-plugin/wordpress-seo": 20,
+        "wpackagist-plugin/redirection": 20,
+        "wpackagist-plugin/acf-extended": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
