@@ -2,8 +2,13 @@ name: PHPCS
 run-name: Checking PHP syntax with CodeSniffer
 on: [push]
 jobs:
-  uses: shivammathur/setup-php@v2
-  with:
-    php-version: "8.2"
-    tools: cs2pr, phpcs
-  run: phpcs -q --report=checkstyle src | cs2pr
+  phpcs-linting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+          tools: cs2pr, phpcs
+      - name: Run phpcs
+        run: phpcs -q --report=checkstyle src | cs2pr
