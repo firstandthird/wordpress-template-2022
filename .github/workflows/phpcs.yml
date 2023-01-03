@@ -1,6 +1,2 @@
-name: Setup PHP
-uses: shivammathur/setup-php@v2
-with:
-  php-version: "8.1"
-  tools: cs2pr, phpcs
-run: phpcs -q --report=checkstyle src | cs2pr
+- name: Setup PHP Action
+  uses: shivammathur/setup-php@2.23.0
