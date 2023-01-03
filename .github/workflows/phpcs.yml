@@ -24,6 +24,6 @@ jobs:
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
           restore-keys: ${{ runner.os }}-composer-
       - name: Install dependencies
-        run: composer install --prefer-dist --no-suggest --no-progress
+        run: composer require --dev --prefer-dist --no-suggest --no-progress wp-coding-standards/wpcs:2.3.0
       - name: Run PHPCS
         run: phpcs -q --extensions=php --report=checkstyle wp-content/themes/
