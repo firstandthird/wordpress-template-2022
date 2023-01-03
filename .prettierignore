@@ -11,6 +11,7 @@ vendor
 data
 
 # wordpress specific
+**/*.php
 wp-content/uploads/
 wp-content/blogs.dir/
 wp-content/upgrade/*
