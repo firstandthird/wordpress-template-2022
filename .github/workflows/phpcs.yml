@@ -17,4 +17,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Run PHPCS
-        run: phpcs -q --report=checkstyle --standard=WordPress-VIP-Go wp-content
+        run: phpcs -q --report=checkstyle --standard=/vendor/automattic/vipwpcs/WordPress-VIP-Go wp-content
