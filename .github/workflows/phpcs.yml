@@ -27,7 +27,7 @@ jobs:
           restore-keys: ${{ runner.os }}-composer-
       - name: Install dependencies
         env:
-          ACF_PRO_KEY: none
+          ACF_PRO_KEY: 'none'
         run: composer update automattic/vipwpcs
       - name: Run PHPCS
         run: phpcs -q --report=checkstyle --standard=WordPress-VIP-Go wp-content
