@@ -16,7 +16,5 @@ jobs:
           tools: cs2pr, phpcs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Install coding standards
-        run: composer update --dev automattic/vipwpcs
       - name: Run PHPCS
         run: phpcs -q --report=checkstyle --standard=WordPress-VIP-Go wp-content
