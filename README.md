@@ -67,7 +67,7 @@ Several things are handled during this step:
 
 ### Set up the WordPress admin
 
-1. Access the Docker instance by going to [localhost](http://localhost/). If you do not see the website, check the **Ports** column in Docker desktop or list running containers in your CLI to find the correct port to use (e.g. 80, 3000, 8888).
+1. Access the Docker instance by going to [localhost:8080](http://localhost:8080). If you do not see the website, check the **Ports** column in Docker desktop or list running containers in your CLI to find the correct port to use (e.g. 80, 3000, 8888).
 
 2. Follow the WordPress installation steps, log into your account, and change to the Client Theme.
 

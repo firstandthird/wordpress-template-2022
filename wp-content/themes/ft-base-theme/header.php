@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width">
     <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class( 'bg-white text-gray-900 font-sans antialiased' ); ?>>
+<body <?php body_class('bg-white text-gray-900 font-sans antialiased'); ?>>
 
-<?php do_action( 'base_theme_site_before' ); ?>
+<?php do_action('base_theme_site_before'); ?>
 
 <div id="page" class="min-h-screen flex flex-col">
 
-    <?php do_action( 'base_theme_header' ); ?>
+    <?php do_action('base_theme_header'); ?>
 
     <header>
 
@@ -25,12 +25,12 @@
                         <?php if ( has_custom_logo() ) { ?>
                           <?php the_custom_logo(); ?>
                         <?php } else { ?>
-                            <a href="<?php echo esc_url( get_bloginfo( 'url' ) ); ?>" class="font-extrabold text-lg uppercase">
-                          <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
+                            <a href="<?php echo esc_url(get_bloginfo('url')); ?>" class="font-extrabold text-lg uppercase">
+                          <?php echo esc_html(get_bloginfo('name')); ?>
                             </a>
 
                             <p class="text-sm font-light text-gray-600">
-                          <?php echo esc_html( get_bloginfo( 'description' ) ); ?>
+                          <?php echo esc_html(get_bloginfo('description')); ?>
                             </p>
 
                         <?php } ?>
@@ -69,6 +69,6 @@
 
     <div id="content" class="site-content flex-grow">
 
-        <?php do_action( 'base_theme_content_start' ); ?>
+        <?php do_action('base_theme_content_start'); ?>
 
         <main>

@@ -1,24 +1,24 @@
 <?php
-add_action( 'wp_enqueue_scripts', '_ft_client_theme_scripts_styles' );
+add_action('wp_enqueue_scripts', '_ft_client_theme_scripts_styles');
 function _ft_client_theme_scripts_styles() {
   $theme = wp_get_theme();
   wp_enqueue_style(
     'ft-client-theme',
     get_stylesheet_directory_uri() . '/css/app.css',
     array(),
-    $theme->get( 'Version' )
+    $theme->get('Version')
   );
   wp_enqueue_script(
     'ft-client-theme',
     get_stylesheet_directory_uri() . '/js/app.js',
     array(),
-    $theme->get( 'Version' ),
+    $theme->get('Version'),
     true
   );
-  add_editor_style( 'css/editor-style.css' );
+  add_editor_style('css/editor-style.css');
 }
 
-add_action( 'wp_enqueue_scripts', '_ft_client_theme_fonts' );
+add_action('wp_enqueue_scripts', '_ft_client_theme_fonts');
 function _ft_client_theme_fonts() {
   $theme = wp_get_theme();
   wp_enqueue_style(
@@ -35,7 +35,7 @@ function _ft_client_theme_fonts() {
   );
 }
 
-add_action( 'init', 'register_acf_blocks' );
+add_action('init', 'register_acf_blocks');
 function register_acf_blocks() {
-  register_block_type( __DIR__ . '/blocks/testimonial' );
+  register_block_type(__DIR__ . '/blocks/testimonial');
 }

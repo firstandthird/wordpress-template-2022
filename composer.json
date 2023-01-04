@@ -27,7 +27,7 @@
       "package": {
         "name": "advanced-custom-fields/advanced-custom-fields-pro",
         "version": "6.0.5",
-        "type": "wordpress-muplugin",
+        "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
           "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t={%ACF_VERSION}"
@@ -50,6 +50,7 @@
     "pronamic/gravityforms": "2.6.8"
   },
   "require-dev": {
+    "automattic/vipwpcs": "^2.3",
     "phpcompatibility/php-compatibility": "^9.0",
     "phpcsstandards/phpcsdevtools": "^1.0",
     "wp-coding-standards/wpcs": "^2.3.0"
@@ -58,7 +59,6 @@
     "installer-paths": {
       "wp-content/mu-plugins/{$name}/": [
         "type:wordpress-muplugin",
-        "advanced-custom-fields/advanced-custom-fields-pro",
         "wpackagist-plugin/acf-extended",
         "wpackagist-plugin/svg-support",
         "wpackagist-plugin/wordpress-seo"
