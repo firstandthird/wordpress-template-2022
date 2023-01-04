@@ -792,14 +792,14 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/acf-extended.zip?timestamp=1670098739"
+                "url": "https://downloads.wordpress.org/plugin/acf-extended.zip?timestamp=1672829381"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/acf-extended/",
-            "time": "2022-12-03T20:18:59+00:00"
+            "time": "2023-01-04T10:49:41+00:00"
         },
         {
             "name": "wpackagist-plugin/redirection",

@@ -5,7 +5,7 @@ function _ft_client_theme_scripts_styles() {
   wp_enqueue_style(
     'ft-client-theme',
     get_stylesheet_directory_uri() . '/css/app.css',
-    array( $parenthandle ),
+    array(),
     $theme->get( 'Version' )
   );
   wp_enqueue_script(
