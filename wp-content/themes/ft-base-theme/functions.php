@@ -8,7 +8,7 @@ function base_theme_setup() {
 
   register_nav_menus(
     array(
-        'primary' => __('Primary Menu', 'tailpress'),
+        'primary' => __('Primary Menu', 'ft_base_theme'),
     )
   );
 
