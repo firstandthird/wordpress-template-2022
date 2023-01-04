@@ -16,19 +16,7 @@ jobs:
           tools: cs2pr, phpcs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Get Composer cache directory
-        id: composer-cache
-        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
-      - name: Setup cache
-        uses: pat-s/always-upload-cache@v1.1.4
-        with:
-          path: ${{ steps.composer-cache.outputs.dir }}
-          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
-          restore-keys: ${{ runner.os }}-composer-
-      - name: Install dependencies
-        env:
-          ACF_PRO_KEY: '0000'
-          ACF_VERSION: '6.0.5'
-        run: composer update automattic/vipwpcs
+      - name: Install coding standards
+        run: composer require automattic/vipwpcs
       - name: Run PHPCS
         run: phpcs -q --report=checkstyle --standard=WordPress-VIP-Go wp-content
