@@ -33,13 +33,13 @@ article > *:not(.entry-content),
 
   ul:not(.block-editor-block-variation-picker__variations) {
     li {
-      @apply list-disc list-inside;
+      @apply list-inside list-disc;
     }
   }
 
   ol {
     li {
-      @apply list-decimal list-inside;
+      @apply list-inside list-decimal;
     }
   }
 }

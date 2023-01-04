@@ -7,8 +7,8 @@
 *.swp
 Thumbs.db
 node_modules
-vendor
 data
+vendor
 
 # wordpress specific
 wp-content/uploads/
@@ -26,8 +26,6 @@ wp-content/themes/twenty*
 wp-content/themes/index.php
 wp-content/themes/**/css
 wp-content/themes/**/js
-!wp-content/themes/base-theme/css
-!wp-content/themes/base-theme/js
 wp-content/plugins
 wp-content/mu-plugins
 

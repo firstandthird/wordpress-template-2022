@@ -17,15 +17,15 @@
 	<arg name="parallel" value="8"/> <!-- Enables parallel processing -->
 	<arg name="extensions" value="php,js"/> <!-- Limit to PHP and JS files -->
 
-	<!-- Rules: WordPress Coding Standards -->
-  <rule ref="WordPress-Extra">
+	<!-- Rules: WordPress VIP Coding Standards -->
+  <rule ref="WordPress-VIP-Go">
     <exclude name="Generic.Arrays.DisallowShortArraySyntax" />
     <exclude name="Generic.WhiteSpace.DisallowSpaceIndent" />
     <exclude name="Generic.WhiteSpace.ScopeIndent" />
     <exclude name="WordPress.PHP.DisallowShortTernary" />
     <exclude name="WordPress.WhiteSpace.PrecisionAlignment" />
   </rule>
-  <config name="minimum_supported_wp_version" value="5.9-"/>
+  <config name="minimum_supported_wp_version" value="6.0-"/>
 
   <!-- Rules: F+T Coding Standards -->
   <rule ref="Generic.Formatting.MultipleStatementAlignment"/>
