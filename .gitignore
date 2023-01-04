@@ -8,12 +8,7 @@
 Thumbs.db
 node_modules
 data
-vendor/*
-!vendor/automattic/
-!vendor/automattic/vipwpcs/
-!vendor/automattic/vipwpcs/*/
-!vendor/automattic/vipwpcs/*/*/
-!vendor/automattic/vipwpcs/*/*/*/
+vendor
 
 # wordpress specific
 wp-content/uploads/
