@@ -6,9 +6,9 @@
 *.bak
 *.swp
 Thumbs.db
-node_modules
-data
-vendor
+node_modules/
+data/
+vendor/
 
 # wordpress specific
 wp-content/uploads/
