@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "83322140f84c956d2faa3e3898b4f921",
+    "content-hash": "dea34e4e6ad808225ee514020fd00c20",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -838,6 +838,24 @@
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/svg-support/",
             "time": "2022-12-12T23:25:47+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/timber-library",
+            "version": "1.22.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/timber-library/",
+                "reference": "tags/1.22.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/timber-library.1.22.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/timber-library/"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",

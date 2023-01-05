@@ -46,6 +46,7 @@
     "wpackagist-plugin/wordpress-seo": "dev-trunk",
     "wpackagist-plugin/redirection": "dev-trunk",
     "wpackagist-plugin/acf-extended": "dev-trunk",
+    "wpackagist-plugin/timber-library": "1.22.1",
     "advanced-custom-fields/advanced-custom-fields-pro": "*",
     "pronamic/gravityforms": "2.6.8"
   },
@@ -61,7 +62,8 @@
         "type:wordpress-muplugin",
         "wpackagist-plugin/acf-extended",
         "wpackagist-plugin/svg-support",
-        "wpackagist-plugin/wordpress-seo"
+        "wpackagist-plugin/wordpress-seo",
+        "wpackagist-plugin/timber-library"
       ],
       "wp-content/themes/{$name}": [
         "type:wordpress-theme"
