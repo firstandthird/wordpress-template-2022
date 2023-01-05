@@ -69,7 +69,7 @@ Several things are handled during this step:
 
 1. Access the Docker instance by going to [localhost:8080](http://localhost:8080). If you do not see the website, check the **Ports** column in Docker desktop or list running containers in your CLI to find the correct port to use (e.g. 80, 3000, 8888).
 
-2. Follow the WordPress installation steps, log into your account, and change to the Client Theme.
+2. Follow the WordPress installation steps, log into your account, and change to the F+T Client Theme.
 
 3. Create a page and call it "Home".
 
@@ -107,6 +107,10 @@ The child theme template includes only the core files and imports.
 
 The front-end CSS and JS loaded across the website. These are the entry points for the compiler and where any extra resources should be imported.
 
+#### custom.css
+
+The global CSS stylesheet; supports Tailwind syntax like `@layer` and `@screen`. This should be used sparingly as we prefer inline Tailwind classes to global styles, but it's recommended for setting `@layer base` styles such as fonts, font sizes, container spacing, and etcetera.
+
 #### editor-style.css
 
-The back-end CSS used to enable Tailwind styles in the Gutenberg builder.
+The back-end CSS used to enable Tailwind styles in the Gutenberg builder. [This Codex page for `add_editor_style()`](https://developer.wordpress.org/reference/functions/add_editor_style/) explains how styles target parts of the TinyMCE and Gutenberg editors.
