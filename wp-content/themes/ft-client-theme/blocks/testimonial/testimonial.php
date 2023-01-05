@@ -33,9 +33,9 @@ $author_role = get_field('role') ?: 'Author role';
 
 ?>
 <div <?php echo esc_attr($anchor); ?>class="<?php echo esc_attr($class_name); ?>">
-    <blockquote class="testimonial-blockquote">
-        <span class="testimonial-text"><?php echo esc_html($text); ?></span>
-        <span class="testimonial-author"><?php echo esc_html($author); ?></span>
-        <span class="testimonial-role"><?php echo esc_html($author_role); ?></span>
+    <blockquote class="m-0 p-6 border-solid border-0 border-l-4 border-l-blue-900 bg-blue-200">
+        <span class="block mb-2 text-xl leading-tight"><?php echo esc_html($text); ?></span>
+        <span class="block text-sm leading-normal"><?php echo esc_html($author); ?></span>
+        <span class="block text-sm leading-normal"><?php echo esc_html($author_role); ?></span>
     </blockquote>
 </div>
