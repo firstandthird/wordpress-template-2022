@@ -15,10 +15,16 @@ function _ft_client_theme_scripts_styles() {
     $theme->get('Version'),
     true
   );
-  add_editor_style('css/editor-style.css');
 }
 
+add_action(
+  'admin_init', function () {
+    add_editor_style('/css/editor-style.css');
+  }
+);
+
 add_action('wp_enqueue_scripts', '_ft_client_theme_fonts');
+add_action('admin_init', '_ft_client_theme_fonts');
 function _ft_client_theme_fonts() {
   $theme = wp_get_theme();
   wp_enqueue_style(

@@ -22,6 +22,7 @@
     <exclude name="Generic.Arrays.DisallowShortArraySyntax" />
     <exclude name="Generic.WhiteSpace.DisallowSpaceIndent" />
     <exclude name="Generic.WhiteSpace.ScopeIndent" />
+    <exclude name="WordPress.PHP.DisallowShortTernary" />
     <exclude name="WordPress.WhiteSpace.PrecisionAlignment" />
   </rule>
   <config name="minimum_supported_wp_version" value="6.0-"/>
