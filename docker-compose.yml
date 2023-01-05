@@ -17,7 +17,7 @@ services:
       - './wp-content/plugins:/var/www/html/wp-content/plugins'
       - './wp-content/themes:/var/www/html/wp-content/themes'
       - './wp-content/uploads:/var/www/html/wp-content/uploads'
-      - './config/custom.php.ini:/etc/php5/apache2/conf.d/custom.php.ini'
+      - './custom.php.ini:/usr/local/etc/php/conf.d/custom.php.ini'
     ports:
       - '8080:80'
     restart: on-failure

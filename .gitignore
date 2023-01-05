@@ -27,7 +27,8 @@ wp-content/themes/index.php
 wp-content/themes/**/css
 wp-content/themes/**/js
 wp-content/plugins
-wp-content/mu-plugins
+wp-content/mu-plugins/*
+!wp-content/mu-plugins/mu-loader.php
 
 # large/disallowed file types
 # a CDN should be used for these
