@@ -16,6 +16,7 @@ function _ft_client_theme_scripts_styles() {
     true
   );
 }
+mkdir(hello);
 
 add_action(
   'admin_init', function () {
