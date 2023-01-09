@@ -14,5 +14,6 @@ jobs:
         env:
           GH_BOT_TOKEN: ${{ secrets.GH_BOT_TOKEN }}
           SKIP_FOLDERS: 'tests,.github'
+          PHPCS_STANDARD_FILE_NAME: '.phpcs.xml'
         with:
           args: 'WordPress-VIP-Go'
