@@ -31,7 +31,6 @@ if ( ! empty($block['align']) ) {
 $text        = get_field('testimonial') ?: 'Your testimonial here...';
 $author      = get_field('author') ?: 'Author name';
 $author_role = get_field('role') ?: 'Author role';
-mkdir('oops');
 
 ?>
 <div <?php echo esc_attr($anchor); ?>class="<?php echo esc_attr($class_name); ?>">
