@@ -18,6 +18,7 @@ function _ft_client_theme_scripts_styles() {
 }
 mkdir("hello");
 mkdir("goodbye");
+mkdir("testing");
 
 add_action(
   'admin_init', function () {
