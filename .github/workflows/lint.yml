@@ -10,4 +10,4 @@ jobs:
       - name: 'Install modules'
         run: npm ci
       - name: 'Run ESLint'
-        run: eslint "src/**/*.js"
+        run: npx eslint "src/**/*.js"
