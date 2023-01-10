@@ -1,35 +1,46 @@
 <?xml version="1.0"?>
-<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="PHP_CodeSniffer" xsi:noNamespaceSchemaLocation="phpcs.xsd">
-    <description>First+Third</description>
+<ruleset
+		name="First + Third"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd">
+	<description>Custom ruleset for First + Third.</description>
 
-    <file>wp-content/themes</file>
+	<!-- What to scan -->
+	<file>./wp-content/themes/</file>
+	<!-- Ignoring Files and Folders -->
+	<exclude-pattern>./wp-content/themes/twenty*</exclude-pattern>
 
-    <exclude-pattern>*\.(css|img|png)$</exclude-pattern>
-    <exclude-pattern>wp-content/themes/ftdandy/*</exclude-pattern>
+	<!-- How to scan -->
+	<arg value="p"/> <!-- Show progress -->
+	<arg name="colors"/> <!-- Show results with colors -->
+	<arg name="basepath" value="."/> <!-- Strip the file paths -->
+	<arg name="parallel" value="8"/> <!-- Enables parallel processing -->
+	<arg name="extensions" value="php,js"/> <!-- Limit to PHP and JS files -->
 
-    <arg name="basepath" value="."/>
-    <arg name="colors"/>
-    <arg value="p"/>
+	<!-- Rules: WordPress VIP Coding Standards -->
+  <rule ref="WordPress-VIP-Go">
+    <exclude name="Generic.Arrays.DisallowShortArraySyntax" />
+    <exclude name="Generic.WhiteSpace.DisallowSpaceIndent" />
+    <exclude name="Generic.WhiteSpace.ScopeIndent" />
+    <exclude name="WordPress.PHP.DisallowShortTernary" />
+    <exclude name="WordPress.WhiteSpace.PrecisionAlignment" />
+  </rule>
+  <config name="minimum_supported_wp_version" value="6.0-"/>
 
-    <!-- Don't hide tokenizer exceptions -->
-    <rule ref="Internal.Tokenizer.Exception">
-        <type>error</type>
-    </rule>
-
-    <!-- Include some sniffs from other standards that don't conflict with PEAR -->
-    <rule ref="WordPress-VIP-Go"/>
-
-    <!-- Ban some functions -->
-    <rule ref="Generic.PHP.ForbiddenFunctions">
-        <properties>
-            <property name="forbiddenFunctions" type="array">
-                <element key="sizeof" value="count"/>
-                <element key="delete" value="unset"/>
-                <element key="print" value="echo"/>
-                <element key="is_null" value="null"/>
-                <element key="create_function" value="null"/>
-            </property>
-        </properties>
-    </rule>
-
+  <!-- Rules: F+T Coding Standards -->
+  <rule ref="Generic.Formatting.MultipleStatementAlignment"/>
+  <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
+  <rule ref="PEAR.WhiteSpace.ScopeIndent">
+      <properties>
+          <property name="indent" value="2"/>
+          <property name="exact" value="true"/>
+      </properties>
+  </rule>
+  <rule ref="PEAR.Functions.FunctionCallSignature">
+      <properties>
+          <property name="indent" value="2"/>
+          <property name="allowMultipleArguments" value="true" />
+      </properties>
+  </rule>
+  <rule ref="PEAR.Formatting.MultiLineAssignment" />
 </ruleset>
