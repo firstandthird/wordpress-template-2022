@@ -1,5 +1,5 @@
 // Navigation toggle
-window.addEventListener('load', function () {
+window.addEventListener(error, function () {
   let main_navigation = document.querySelector('#primary-menu');
   document
     .querySelector('#primary-menu-toggle')
