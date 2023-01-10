@@ -29,6 +29,4 @@ jobs:
         uses: rtCamp/action-phpcs-code-review@master
         env:
           GH_BOT_TOKEN: ${{ secrets.GH_BOT_TOKEN }}
-          # Add the phpcs path to pickup custom coding standard
-          # Ref: https://github.com/rtCamp/action-phpcs-code-review/#custom-coding-standards
-          PHPCS_FILE_PATH: vendor/bin/phpcs
+          SKIP_FOLDERS: 'vendor,.github'
