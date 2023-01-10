@@ -9,13 +9,6 @@
 	<file>./wp-content/themes/</file>
 	<!-- Ignoring Files and Folders -->
 	<exclude-pattern>./wp-content/themes/twenty*</exclude-pattern>
-  <exclude-pattern>./wp-content/plugins/*</exclude-pattern>
-  <exclude-pattern>./wp-content/mu-plugins/*</exclude-pattern>
-  <exclude-pattern>./wp-content/uploads/*</exclude-pattern>
-  <exclude-pattern>*/dev-lib/*</exclude-pattern>
-	<exclude-pattern>*/node_modules/*</exclude-pattern>
-	<exclude-pattern>*/vendor/*</exclude-pattern>
-	<exclude-pattern>.github/</exclude-pattern>
 
 	<!-- How to scan -->
 	<arg value="sp"/> <!-- Show sniff and progress -->
