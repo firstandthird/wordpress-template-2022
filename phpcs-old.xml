@@ -11,7 +11,7 @@
 	<exclude-pattern>./wp-content/themes/twenty*</exclude-pattern>
 
 	<!-- How to scan -->
-	<arg value="sp"/> <!-- Show sniff and progress -->
+	<arg value="p"/> <!-- Show progress -->
 	<arg name="colors"/> <!-- Show results with colors -->
 	<arg name="basepath" value="."/> <!-- Strip the file paths -->
 	<arg name="parallel" value="8"/> <!-- Enables parallel processing -->
