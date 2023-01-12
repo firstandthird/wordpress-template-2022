@@ -59,6 +59,7 @@
     "installer-paths": {
       "wp-content/mu-plugins/{$name}/": [
         "type:wordpress-muplugin",
+        "advanced-custom-fields/advanced-custom-fields-pro",
         "wpackagist-plugin/acf-extended",
         "wpackagist-plugin/svg-support",
         "wpackagist-plugin/wordpress-seo"
