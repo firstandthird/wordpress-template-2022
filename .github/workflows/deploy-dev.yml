@@ -1,0 +1,26 @@
+name: Deploy Dev Site
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Hit Webhook
+        id: webhook
+        run: |
+          echo "::set-output name=releaseurl::$(curl -s 'https://wp.mettuce.com/deploy.php?token=${{ secrets.DEPLOY_TOKEN }}&site=wp-template-2022&branch=${{ github.head_ref }}&ref=${{ github.ref }}')"
+      - name: Comment
+        uses: mb2dev/github-action-comment-pull-request@1.0.0
+        if: steps.webhook.outputs.releaseurl != '' && github.head_ref != ''
+        with:
+          message: '${{ steps.webhook.outputs.releaseurl }}'
+          GITHUB_TOKEN: ${{ secrets.GH_BOT_TOKEN }}
+      - name: Refresh
+        if: steps.webhook.outputs.releaseurl != '' && github.head_ref != ''
+        run: |
+          curl -s '${{ steps.webhook.outputs.releaseurl }}?refresh=1'

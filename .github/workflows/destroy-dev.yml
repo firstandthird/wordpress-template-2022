@@ -1,0 +1,17 @@
+name: Destroy Dev Site
+
+on:
+  pull_request:
+    types: [closed]
+    branches-ignore:
+      - 'staging'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    steps:
+      - name: Hit Webhook
+        id: webhook
+        run: |
+          echo "::set-output name=releaseurl::$(curl -s 'https://wp.mettuce.com/destroy.php?token=${{ secrets.DEPLOY_TOKEN }}&site=wp-template-2022&branch=${{ github.head_ref }}')"
