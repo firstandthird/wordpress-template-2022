@@ -1,8 +1,5 @@
 <?xml version="1.0"?>
-<ruleset
-		name="First + Third"
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd">
+<ruleset name="First + Third">
 	<description>Custom ruleset for First + Third.</description>
 
 	<!-- What to scan -->
@@ -11,11 +8,8 @@
 	<exclude-pattern>./wp-content/themes/twenty*</exclude-pattern>
 
 	<!-- How to scan -->
-	<arg value="sp"/> <!-- Show sniff and progress -->
-	<arg name="colors"/> <!-- Show results with colors -->
-	<arg name="basepath" value="."/> <!-- Strip the file paths -->
-	<arg name="parallel" value="8"/> <!-- Enables parallel processing -->
-	<arg name="extensions" value="php,js"/> <!-- Limit to PHP and JS files -->
+  <arg name="extensions" value="php"/> <!-- Limit to PHP files -->
+	<arg value="s"/> <!-- Show sniffs -->
 
 	<!-- Rules: WordPress VIP Coding Standards -->
   <rule ref="WordPress-VIP-Go">
