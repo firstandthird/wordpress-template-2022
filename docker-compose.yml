@@ -1,7 +1,6 @@
 services:
   db:
-    image: mariadb:latest
-    command: '--default-authentication-plugin=mysql_native_password'
+    image: mariadb:10.7
     volumes:
       - db_data:/var/lib/mysql
     restart: on-failure
