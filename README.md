@@ -31,7 +31,7 @@ Happy coding!
 
 ---
 
-> **REMOVE THE ABOVE INFORMATION AND THIS DIVIDER BEFORE DEPLOYING!**
+> **REMOVE THE ABOVE INFORMATION AND THIS DIVIDER BEFORE DEPLOYMENT!**
 
 ---
 
@@ -56,7 +56,7 @@ There are a few requirements to develop a new theme or contribute back to the pr
     bash
     $ npm install
     $ npm run initialize --acf-key={Paste ACF Pro license key}
-    $ docker compose up -d
+    $ npm run start
 
 Several things are handled during this step:
 

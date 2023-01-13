@@ -26,6 +26,8 @@
     "initialize:copy-env": "cp .env-example .env",
     "initialize:start": "cross-env-shell \"npm run initialize:copy-env && npm run initialize:update && npm run build\"",
     "initialize:update": "cross-env-shell \"concurrently \\\"composer update\\\" \\\"npm update\\\"\"",
+    "start": "docker compose up -d",
+    "stop": "docker compose down",
     "watch": "cross-env NODE_ENV=development concurrently \"npm run watch:css-app\" \"npm run watch:css-editor\" \"npm run watch:js\"",
     "watch:css-app": "cross-env NODE_ENV=development tailwindcss -i ./src/css/app.css -o ./wp-content/themes/ft-client-theme/css/app.css --postcss --watch",
     "watch:css-editor": "cross-env NODE_ENV=development tailwindcss -i ./src/css/editor-style.css -o ./wp-content/themes/ft-client-theme/css/editor-style.css --postcss --watch",
