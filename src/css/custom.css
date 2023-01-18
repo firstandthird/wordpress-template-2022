@@ -1,6 +1,11 @@
 article > *:not(.entry-content),
+.entry-content > *:not(.alignwide, .alignfull) {
+  @apply max-w-content;
+}
+
+article > *:not(.entry-content),
 .entry-content > * {
-  @apply mx-auto max-w-content;
+  @apply !mx-auto;
 }
 
 .entry-content,
