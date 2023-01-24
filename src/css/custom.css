@@ -1,5 +1,6 @@
 article > *:not(.entry-content),
-.entry-content > *:not(.alignwide, .alignfull) {
+.entry-content > *:not(.alignwide, .alignfull),
+div.site-content > main > * {
   @apply max-w-content;
 }
 

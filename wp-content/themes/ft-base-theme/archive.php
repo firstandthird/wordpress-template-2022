@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="mx-auto my-8">
-  <h1 class="entry-title text-2xl lg:text-5xl font-extrabold leading-tight mb-8 max-w-content">Blog</h1>
+  <h1 class="entry-title text-2xl lg:text-5xl font-extrabold leading-tight mb-8 max-w-content"><?= wp_kses_post(get_the_archive_title()); ?></h1>
     <?php if ( have_posts() ) : ?>
       <?php
       while ( have_posts() ) :
