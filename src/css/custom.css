@@ -1,6 +1,12 @@
 article > *:not(.entry-content),
+.entry-content > *:not(.alignwide, .alignfull),
+div.site-content > main > * {
+  @apply max-w-content;
+}
+
+article > *:not(.entry-content),
 .entry-content > * {
-  @apply mx-auto max-w-content;
+  @apply !mx-auto;
 }
 
 .entry-content,
@@ -18,7 +24,7 @@ article > *:not(.entry-content),
   }
 
   p,
-  ul,
+  ul:not(.ft-navigation-block-list),
   ol {
     a {
       @apply text-blue-500 underline;

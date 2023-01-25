@@ -40,8 +40,3 @@ function _ft_client_theme_fonts() {
     '0.1.0'
   );
 }
-
-add_action('init', 'register_acf_blocks');
-function register_acf_blocks() {
-  register_block_type(__DIR__ . '/blocks/testimonial');
-}
