@@ -2,7 +2,7 @@
 @import 'tailwindcss/utilities';
 
 body {
-  @apply box-border font-sans;
+  @apply font-sans;
 }
 
 .wp-block {

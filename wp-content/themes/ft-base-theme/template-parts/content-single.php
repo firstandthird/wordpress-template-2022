@@ -2,7 +2,7 @@
 $img_url = get_the_post_thumbnail_url(null, 'full');
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('container mx-auto'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php if ($img_url): ?>
     <div>
       <img class="w-full h-auto max-h-[50vh] object-cover mb-4" src="<?= esc_url($img_url) ?>" />
@@ -15,7 +15,7 @@ $img_url = get_the_post_thumbnail_url(null, 'full');
           <?php
           $categories = get_the_category();
           foreach ($categories as $category) { ?>
-          <a class="text-blue-500 text-sm" href="<?= esc_url($category->url); ?>"><?= esc_html($category->name); ?></a><span>,</span>
+          <a class="text-blue-500 text-sm" href="<?= esc_url('/category/' . $category->slug); ?>"><?= esc_html($category->name); ?></a><span>,</span>
           <?php } ?>
         </div>
     </header>
@@ -26,13 +26,13 @@ $img_url = get_the_post_thumbnail_url(null, 'full');
         <?php
         wp_link_pages(
           array(
-              'before'      => '<div class="page-links"><span class="page-links-title">' . __('Pages:', 'ft_base_theme') . '</span>',
-              'after'       => '</div>',
-              'link_before' => '<span>',
-              'link_after'  => '</span>',
-              'pagelink'    => '<span class="screen-reader-text">' . __('Page', 'ft_base_theme') . ' </span>%',
-              'separator'   => '<span class="screen-reader-text">, </span>',
-          )
+                    'before'      => '<div class="page-links"><span class="page-links-title">' . __('Pages:', 'tailpress') . '</span>',
+                    'after'       => '</div>',
+                    'link_before' => '<span>',
+                    'link_after'  => '</span>',
+                    'pagelink'    => '<span class="screen-reader-text">' . __('Page', 'tailpress') . ' </span>%',
+                    'separator'   => '<span class="screen-reader-text">, </span>',
+                )
         );
         ?>
     </div>
