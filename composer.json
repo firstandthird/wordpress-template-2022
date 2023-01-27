@@ -23,6 +23,10 @@
       "url": "https://github.com/pronamic/gravityforms"
     },
     {
+      "type": "vcs",
+      "url": "https://github.com/firstandthird/dandy-blocks"
+    },
+    {
       "type": "package",
       "package": {
         "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -46,6 +50,7 @@
     "wpackagist-plugin/wordpress-seo": "dev-trunk",
     "wpackagist-plugin/redirection": "dev-trunk",
     "wpackagist-plugin/acf-extended": "dev-trunk",
+    "firstandthird/dandy-blocks": "dev-acf-6-version",
     "advanced-custom-fields/advanced-custom-fields-pro": "*",
     "pronamic/gravityforms": "2.6.8"
   },
@@ -60,6 +65,7 @@
       "wp-content/mu-plugins/{$name}/": [
         "type:wordpress-muplugin",
         "advanced-custom-fields/advanced-custom-fields-pro",
+        "firstandthird/dandy-blocks",
         "wpackagist-plugin/acf-extended",
         "wpackagist-plugin/svg-support",
         "wpackagist-plugin/wordpress-seo"

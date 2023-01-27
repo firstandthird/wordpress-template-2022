@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb24f63408752dc2a5fc2151c7829d04",
+    "content-hash": "b137cbfd307f8e516443057b071df029",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -236,6 +236,37 @@
                 }
             ],
             "time": "2020-10-30T09:35:33+00:00"
+        },
+        {
+            "name": "firstandthird/dandy-blocks",
+            "version": "dev-acf-6-version",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/firstandthird/dandy-blocks.git",
+                "reference": "8b1a5ec9736204623c38e6c10b00cfbe22241837"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/firstandthird/dandy-blocks/zipball/8b1a5ec9736204623c38e6c10b00cfbe22241837",
+                "reference": "8b1a5ec9736204623c38e6c10b00cfbe22241837",
+                "shasum": ""
+            },
+            "require-dev": {
+                "automattic/vipwpcs": "^2.3",
+                "phpcompatibility/php-compatibility": "^9.0",
+                "phpcsstandards/phpcsdevtools": "^1.0",
+                "wp-coding-standards/wpcs": "^2.3.0"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "MIT"
+            ],
+            "description": "A collection of Gutenberg blocks built on top of ACF.",
+            "support": {
+                "source": "https://github.com/firstandthird/dandy-blocks/tree/acf-6-version",
+                "issues": "https://github.com/firstandthird/dandy-blocks/issues"
+            },
+            "time": "2023-01-27T21:43:43+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -811,14 +842,14 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.zip?timestamp=1670655125"
+                "url": "https://downloads.wordpress.org/plugin/redirection.zip?timestamp=1674717938"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/redirection/",
-            "time": "2022-12-10T06:52:05+00:00"
+            "time": "2023-01-26T07:25:38+00:00"
         },
         {
             "name": "wpackagist-plugin/svg-support",
@@ -849,14 +880,14 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.zip?timestamp=1674197761"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.zip?timestamp=1674820367"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-seo/",
-            "time": "2023-01-20T06:56:01+00:00"
+            "time": "2023-01-27T11:52:47+00:00"
         }
     ],
     "packages-dev": [
@@ -1229,7 +1260,8 @@
         "wpackagist-plugin/svg-support": 20,
         "wpackagist-plugin/wordpress-seo": 20,
         "wpackagist-plugin/redirection": 20,
-        "wpackagist-plugin/acf-extended": 20
+        "wpackagist-plugin/acf-extended": 20,
+        "firstandthird/dandy-blocks": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
