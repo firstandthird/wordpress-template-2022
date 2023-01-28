@@ -243,12 +243,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/firstandthird/dandy-blocks.git",
-                "reference": "227956464af44563fc6c72241564dcae7e685280"
+                "reference": "20d3acd89a5db74ea966e36ae942ff16ac01cc16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/firstandthird/dandy-blocks/zipball/227956464af44563fc6c72241564dcae7e685280",
-                "reference": "227956464af44563fc6c72241564dcae7e685280",
+                "url": "https://api.github.com/repos/firstandthird/dandy-blocks/zipball/20d3acd89a5db74ea966e36ae942ff16ac01cc16",
+                "reference": "20d3acd89a5db74ea966e36ae942ff16ac01cc16",
                 "shasum": ""
             },
             "require-dev": {
@@ -266,7 +266,7 @@
                 "source": "https://github.com/firstandthird/dandy-blocks/tree/acf-6-version",
                 "issues": "https://github.com/firstandthird/dandy-blocks/issues"
             },
-            "time": "2023-01-27T23:54:00+00:00"
+            "time": "2023-01-28T00:33:08+00:00"
         },
         {
             "name": "graham-campbell/result-type",
