@@ -243,12 +243,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/firstandthird/dandy-blocks.git",
-                "reference": "d481e04e59dfc4fd9def84ef0a02bdb50b7a24c3"
+                "reference": "a29b93c78f94401b28f5b78655f51543a15118a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/firstandthird/dandy-blocks/zipball/d481e04e59dfc4fd9def84ef0a02bdb50b7a24c3",
-                "reference": "d481e04e59dfc4fd9def84ef0a02bdb50b7a24c3",
+                "url": "https://api.github.com/repos/firstandthird/dandy-blocks/zipball/a29b93c78f94401b28f5b78655f51543a15118a7",
+                "reference": "a29b93c78f94401b28f5b78655f51543a15118a7",
                 "shasum": ""
             },
             "require-dev": {
@@ -266,7 +266,7 @@
                 "source": "https://github.com/firstandthird/dandy-blocks/tree/acf-6-version",
                 "issues": "https://github.com/firstandthird/dandy-blocks/issues"
             },
-            "time": "2023-01-28T00:50:35+00:00"
+            "time": "2023-01-30T18:20:57+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -880,14 +880,14 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.zip?timestamp=1674820367"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.zip?timestamp=1675074027"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-seo/",
-            "time": "2023-01-27T11:52:47+00:00"
+            "time": "2023-01-30T10:20:27+00:00"
         }
     ],
     "packages-dev": [
