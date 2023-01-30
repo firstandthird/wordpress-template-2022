@@ -7,7 +7,7 @@ article > *:not(.entry-content),
   @apply mx-auto max-w-content;
 }
 
-.entry-content {
+.entry-content > *:not(.alignfull) {
   @apply px-4;
 }
 
