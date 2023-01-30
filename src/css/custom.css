@@ -7,6 +7,12 @@ article > *:not(.entry-content),
   @apply mx-auto max-w-content;
 }
 
+.entry-content > .alignfull {
+  margin: 2rem auto !important;
+  max-width: 100% !important;
+  width: 100vw;
+}
+
 .entry-content > *:not(.alignfull) {
   @apply px-4;
 }
