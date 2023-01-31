@@ -18,7 +18,7 @@
 
     <header>
 
-        <div class="mx-auto container">
+        <div class="mx-auto max-w-full px-4 sm:container">
             <div class="lg:flex lg:justify-between lg:items-center border-b py-6">
                 <div class="flex justify-between items-center">
                     <div>
