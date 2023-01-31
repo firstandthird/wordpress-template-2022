@@ -1,5 +1,5 @@
 .custom-logo {
-  @apply max-h-16 w-auto;
+  @apply max-h-8 w-auto;
 }
 
 article > *:not(.entry-content),
