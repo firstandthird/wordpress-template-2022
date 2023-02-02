@@ -1,0 +1,13 @@
+{
+  "name": "ft/example",
+  "title": "F+T Example",
+  "description": "A configurable example block.",
+  "style": ["file:./example.css"],
+  "category": "ft-blocks",
+  "icon": "",
+  "keywords": ["example"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "example-block.php"
+  }
+}
