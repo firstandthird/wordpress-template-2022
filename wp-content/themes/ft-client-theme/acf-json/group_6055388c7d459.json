@@ -1,0 +1,107 @@
+{
+  "key": "group_6055388c7d459",
+  "title": "F+T Block: Header",
+  "fields": [
+    {
+      "key": "field_6055389fbca70",
+      "label": "Text",
+      "name": "text",
+      "type": "text",
+      "instructions": "",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_60553cc1847cb",
+      "label": "Subtitle",
+      "name": "subtitle",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_60553ce1847cc",
+      "label": "Header Link",
+      "name": "header_link",
+      "type": "link",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "url"
+    },
+    {
+      "key": "field_605538b9bca71",
+      "label": "Heading Level",
+      "name": "heading_level",
+      "type": "select",
+      "instructions": "Mainly for SEO, this sets which heading tag is used, if any. If unsure, leave as default. None will default to a div tag which wont provide any SEO benefit.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "choices": {
+        "h1": "H1",
+        "h2": "H2",
+        "h3": "H3",
+        "h4": "H4",
+        "h5": "H5",
+        "h6": "H6",
+        "div": "None"
+      },
+      "default_value": "h2",
+      "allow_null": 0,
+      "multiple": 0,
+      "ui": 1,
+      "ajax": 0,
+      "return_format": "value",
+      "placeholder": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "ft/header"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "modified": 1616198906
+}

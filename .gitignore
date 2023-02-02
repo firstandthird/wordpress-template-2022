@@ -28,6 +28,7 @@ wp-content/themes/**/css
 wp-content/themes/**/js
 wp-content/plugins
 wp-content/mu-plugins/*
+!wp-content/mu-plugins/acf-bridge-for-themes.php
 !wp-content/mu-plugins/mu-loader.php
 
 # large/disallowed file types

@@ -1,0 +1,12 @@
+.ft-features-block > div {
+  @apply grid gap-6 lg:gap-10;
+}
+
+@supports (width: min(250px, 100%)) {
+  .ft-features-block > div {
+    grid-template-columns: repeat(
+      var(--no-of-columns),
+      minmax(min(250px, 100%), 1fr)
+    );
+  }
+}

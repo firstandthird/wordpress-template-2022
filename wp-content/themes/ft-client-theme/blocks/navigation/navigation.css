@@ -1,0 +1,14 @@
+ul.ft-navigation-block__list > li > a {
+  display: block;
+  border-bottom: 2px solid transparent;
+  padding: 1rem 1.5rem;
+  text-decoration: none !important;
+}
+
+ul.ft-navigation-block__list > li > a:hover {
+  border-color: rgb(59 130 246);
+}
+
+ul.ft-navigation-block__list > li > a:active {
+  border-color: rgb(100 116 139);
+}

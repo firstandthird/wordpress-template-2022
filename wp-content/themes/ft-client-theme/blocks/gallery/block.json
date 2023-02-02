@@ -1,0 +1,13 @@
+{
+  "name": "ft/gallery",
+  "title": "F+T Gallery",
+  "description": "A configurable gallery block.",
+  "style": ["file:./gallery.css"],
+  "category": "ft-blocks",
+  "icon": "<svg height='16' width='16' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path d='M50 50h-2V14h2a2 2 0 000-4h-8a2 2 0 000 4h2v16H20V14h2a2 2 0 000-4h-8a2 2 0 000 4h2v36h-2a2 2 0 000 4h8a2 2 0 000-4h-2V34h24v16h-2a2 2 0 000 4h8a2 2 0 000-4z'/></svg>",
+  "keywords": ["gallery", "content", "image", "links"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "gallery.php"
+  }
+}

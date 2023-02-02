@@ -1,0 +1,193 @@
+{
+  "key": "group_63cef577b4a2e",
+  "title": "F+T Block: Features",
+  "fields": [
+    {
+      "key": "field_63cef6df1f30c",
+      "label": "Section Title",
+      "name": "section_title",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_63d80966fd850",
+      "label": "Number of Columns",
+      "name": "number_of_columns",
+      "aria-label": "",
+      "type": "select",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "choices": {
+        "auto-fit": "Autofit",
+        "1": "One",
+        "2": "Two",
+        "3": "Three",
+        "4": "Four"
+      },
+      "default_value": "auto-fit",
+      "return_format": "",
+      "multiple": 0,
+      "allow_null": 0,
+      "ui": 0,
+      "ajax": 0,
+      "placeholder": "",
+      "allow_custom": 0,
+      "search_placeholder": ""
+    },
+    {
+      "key": "field_63cef5771f306",
+      "label": "Featured Items",
+      "name": "featured_items",
+      "aria-label": "",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "acfe_repeater_stylised_button": 0,
+      "layout": "table",
+      "pagination": 0,
+      "min": 0,
+      "max": 0,
+      "collapsed": "",
+      "button_label": "Add Row",
+      "rows_per_page": 20,
+      "sub_fields": [
+        {
+          "key": "field_63cef6701f309",
+          "label": "Image or Icon",
+          "name": "image_or_icon",
+          "aria-label": "",
+          "type": "image",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "uploader": "",
+          "acfe_thumbnail": 0,
+          "return_format": "",
+          "library": "",
+          "min_width": "",
+          "min_height": "",
+          "min_size": "",
+          "max_width": "",
+          "max_height": "",
+          "max_size": "",
+          "mime_types": "",
+          "preview_size": "medium",
+          "parent_repeater": "field_63cef5771f306"
+        },
+        {
+          "key": "field_63cef5a51f307",
+          "label": "Title",
+          "name": "title",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Featured Title",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "parent_repeater": "field_63cef5771f306"
+        },
+        {
+          "key": "field_63cef64f1f308",
+          "label": "Featured Content",
+          "name": "featured_content",
+          "aria-label": "",
+          "type": "textarea",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Add your description or summary for the item right here.",
+          "acfe_textarea_code": 0,
+          "maxlength": "",
+          "rows": "",
+          "placeholder": "",
+          "new_lines": "",
+          "parent_repeater": "field_63cef5771f306"
+        },
+        {
+          "key": "field_63cef6ab1f30a",
+          "label": "CTA",
+          "name": "cta",
+          "aria-label": "",
+          "type": "link",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "return_format": "array",
+          "parent_repeater": "field_63cef5771f306"
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "ft/features"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "left",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "show_in_rest": 0,
+  "acfe_display_title": "",
+  "acfe_autosync": ["json"],
+  "acfe_form": 0,
+  "acfe_meta": "",
+  "acfe_note": ""
+}
