@@ -1,5 +1,6 @@
 .ft-features-block > div {
-  @apply grid gap-6 lg:gap-10;
+  display: grid;
+  gap: 1.5rem;
 }
 
 @supports (width: min(250px, 100%)) {
