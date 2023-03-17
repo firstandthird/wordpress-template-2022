@@ -10,8 +10,8 @@
  * @param   array $context The context provided to the block by the post or it's parent block.
  */
 
-$title   = get_field('title');
-$content = get_field('content');
+$block_title = get_field('title');
+$content     = get_field('content');
 
 // Support custom "anchor" values.
 $anchor = '';
@@ -34,6 +34,6 @@ if ( ! empty($block['align']) ) {
  <?= esc_attr($anchor); ?>
  class="<?= esc_attr($class_name); ?> p-4 rounded bg-white shadow-md"
 >
-  <h2><?= esc_html($title) ?></h2>
+  <h2><?= esc_html($block_title) ?></h2>
   <?= wp_kses_post($content) ?>
 </div>

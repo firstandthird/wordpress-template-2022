@@ -48,21 +48,21 @@ if ( ! empty($block['align']) ) {
     <?php while( have_rows('featured_items') ): the_row(); ?>
       <div class="flex justify-between items-start gap-4">
       <?php
-      $image   = get_sub_field('image_or_icon');
-      $title   = get_sub_field('title');
-      $content = get_sub_field('featured_content');
-      $cta     = get_sub_field('cta');
+      $image       = get_sub_field('image_or_icon');
+      $block_title = get_sub_field('title');
+      $content     = get_sub_field('featured_content');
+      $cta         = get_sub_field('cta');
       ?>
 
       <?php if (!empty($image)) { echo wp_get_attachment_image(
         $image, 'large', false, [
           'class' => 'w-[10%]'
-           ]
+        ]
       ); } ?>
-      <?php if (!empty($title) or !empty($content)): ?>
+      <?php if (!empty($block_title) or !empty($content)): ?>
         <div>
-        <?php if (!empty($title)): ?>
-        <h4 class="mb-2 font-bold"><?= esc_html($title) ?></h4>
+        <?php if (!empty($block_title)): ?>
+        <h4 class="mb-2 font-bold"><?= esc_html($block_title) ?></h4>
         <?php endif;
         if (!empty($content)): ?>
         <p class="!mb-0"><?= esc_html($content) ?></p>
