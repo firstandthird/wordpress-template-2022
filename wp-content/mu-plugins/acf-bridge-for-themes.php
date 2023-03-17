@@ -19,7 +19,7 @@ class FT_Blocks_Manager {
   static function init() {
     self::$theme_path = get_stylesheet_directory();
 
-    add_filter('block_categories_all', ['FirstAndThird\FT_Blocks\FT_Blocks_Manager', 'register_block_category'], 10, 2 );
+    add_filter('block_categories_all', ['FirstAndThird\FT_Blocks\FT_Blocks_Manager', 'register_block_category'], 10, 2);
     add_action('init', ['FirstAndThird\FT_Blocks\FT_Blocks_Manager', 'register_blocks']);
   }
 
