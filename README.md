@@ -55,8 +55,12 @@ There are a few requirements to develop a new theme or contribute back to the pr
 
     bash
     $ npm install
-    $ npm run initialize --acf-key={Paste ACF Pro license key}
+    $ npm run initialize
     $ npm run start
+
+During the `initialize` step, you will be asked for ACF credentials. Use the license key for the `username` and the website URL for the `password`.
+
+If you don't know the final production URL for the project, use [https://firstandthird.com/] as the password.
 
 Several things are handled during this step:
 
