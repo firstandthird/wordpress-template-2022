@@ -1,5 +1,5 @@
 <?php
-include get_theme_file_uri('inc/blocks.php');
+include get_theme_file_uri('inc/acf5_blocks.php');
 
 add_action('wp_enqueue_scripts', '_ft_client_theme_scripts_styles');
 function _ft_client_theme_scripts_styles() {
