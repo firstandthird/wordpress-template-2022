@@ -29,11 +29,8 @@ Once this template is turned into a new repository, there are a few things you'l
 
 Happy coding!
 
----
-
-> **REMOVE THE ABOVE INFORMATION AND THIS DIVIDER BEFORE DEPLOYMENT!!**
-
----
+> **Warning**
+> REMOVE THE ABOVE INFORMATION AND THIS NOTICE BEFORE DEPLOYMENT!!
 
 # Client Name
 
@@ -58,9 +55,10 @@ There are a few requirements to develop a new theme or contribute back to the pr
     $ npm run initialize
     $ npm run start
 
-During the `initialize` step, you will be asked for ACF credentials. Use the license key for the `username` and the website URL for the `password`.
+> **Note**
+> During the `initialize` step, you will be asked for ACF credentials. Use the license key for the `username` and the website URL for the `password`.
+> If you don't know the final production URL for the project, use [https://firstandthird.com/] as the password.
 
-If you don't know the final production URL for the project, use [https://firstandthird.com/] as the password.
 
 Several things are handled during this step:
 
@@ -103,7 +101,8 @@ TailPress directly integrates `theme.json` with the Tailwind configuration, allo
 
 The child theme template includes only the core files and imports.
 
-> _Only edit the base theme if absolutely necessary!_
+> **Warning**
+> Only edit the base theme if absolutely necessary!
 
 ### JS and CSS
 
