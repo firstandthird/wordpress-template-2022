@@ -114,3 +114,13 @@ The global CSS stylesheet; supports Tailwind syntax like `@layer` and `@screen`.
 #### editor-style.css
 
 The back-end CSS used to enable Tailwind styles in the Gutenberg builder. [This Codex page for `add_editor_style()`](https://developer.wordpress.org/reference/functions/add_editor_style/) explains how styles target parts of the TinyMCE and Gutenberg editors.
+
+## Adding & Managing Blocks
+
+All blocks are stored in the `/blocks` folder of the client theme. Make a new folder to store your template files and name it after the block.
+
+This theme uses [the ACF 6.0 method of block templating](https://advancedcustomfields.com/resources/blocks/#getting-started).
+
+### Adding Blocks Made in ACF 5.X.X
+
+The theme is designed to be backwards-compatible with ACF's `acf_register_block_type()` function, but we highly recommend you [refactor your v5 blocks to v6](https://advancedcustomfields.com/resources/how-to-upgrade-a-legacy-block-to-block-json-with-acf-6/).
