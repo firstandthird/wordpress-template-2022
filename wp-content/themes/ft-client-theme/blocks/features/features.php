@@ -54,11 +54,13 @@ if ( ! empty($block['align']) ) {
       $cta         = get_sub_field('cta');
       ?>
 
-      <?php if (!empty($image)) { echo wp_get_attachment_image(
-        $image, 'large', false, [
-          'class' => 'w-[10%]'
-        ]
-      ); } ?>
+      <?php if (!empty($image)) {
+        echo wp_get_attachment_image(
+          $image, 'large', false, [
+            'class' => 'w-[10%]'
+          ]
+        );
+      } ?>
       <?php if (!empty($block_title) or !empty($content)): ?>
         <div>
         <?php if (!empty($block_title)): ?>

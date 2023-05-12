@@ -21,6 +21,7 @@
     <exclude name="Generic.Arrays.DisallowShortArraySyntax" />
     <exclude name="Generic.WhiteSpace.DisallowSpaceIndent" />
     <exclude name="Generic.WhiteSpace.ScopeIndent" />
+    <exclude name="PEAR" />
     <exclude name="WordPress.PHP.DisallowShortTernary" />
     <exclude name="WordPress.WhiteSpace.PrecisionAlignment" />
   </rule>
@@ -28,4 +29,18 @@
   <!-- Rules: F+T Coding Standards -->
   <rule ref="Generic.Formatting.MultipleStatementAlignment"/>
   <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
+  <rule ref="PEAR.WhiteSpace.ScopeIndent">
+      <properties>
+          <property name="indent" value="2"/>
+          <property name="exact" value="false"/>
+      </properties>
+  </rule>
+  <rule ref="PEAR.Functions.FunctionCallSignature">
+      <properties>
+          <property name="indent" value="2"/>
+          <property name="allowMultipleArguments" value="true" />
+          <property name="exact" value="false"/>
+      </properties>
+  </rule>
+  <rule ref="PEAR.Formatting.MultiLineAssignment" />
 </ruleset>
