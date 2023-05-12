@@ -1,17 +1,22 @@
 <?xml version="1.0"?>
-<ruleset name="First + Third">
-	<description>Custom ruleset for First + Third.</description>
+<ruleset name="FirstAndThird" namespace="FirstAndThird\CS\Standard">
 
-	<!-- What to scan -->
-	<file>./wp-content/themes/</file>
-	<!-- Ignoring Files and Folders -->
-	<exclude-pattern>./wp-content/themes/twenty*</exclude-pattern>
+  <description>A custom coding standard for First+Third</description>
 
-	<!-- How to scan -->
-  <arg name="extensions" value="php"/> <!-- Limit to PHP files -->
-	<arg value="s"/> <!-- Show sniffs -->
+  <!-- What to scan -->
+  <file>./wp-content/themes</file>
+  <exclude-pattern>./wp-content/themes/twentytwentyone/</exclude-pattern>
+  <exclude-pattern>./wp-content/themes/twentytwentytwo/</exclude-pattern>
+  <exclude-pattern>./wp-content/themes/twentytwentythree/</exclude-pattern>
 
-	<!-- Rules: WordPress VIP Coding Standards -->
+  <!-- How to scan -->
+  <arg value="sp"/>
+  <arg name="colors"/>
+  <arg name="basepath" value="."/>
+  <arg name="parallel" value="8"/>
+  <arg name="extensions" value="php"/>
+
+  <!-- Rules: VIP Coding Standards -->
   <rule ref="WordPress-VIP-Go">
     <exclude name="Generic.Arrays.DisallowShortArraySyntax" />
     <exclude name="Generic.WhiteSpace.DisallowSpaceIndent" />
@@ -19,22 +24,8 @@
     <exclude name="WordPress.PHP.DisallowShortTernary" />
     <exclude name="WordPress.WhiteSpace.PrecisionAlignment" />
   </rule>
-  <config name="minimum_supported_wp_version" value="6.0-"/>
 
   <!-- Rules: F+T Coding Standards -->
   <rule ref="Generic.Formatting.MultipleStatementAlignment"/>
   <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
-  <rule ref="PEAR.WhiteSpace.ScopeIndent">
-      <properties>
-          <property name="indent" value="2"/>
-          <property name="exact" value="true"/>
-      </properties>
-  </rule>
-  <rule ref="PEAR.Functions.FunctionCallSignature">
-      <properties>
-          <property name="indent" value="2"/>
-          <property name="allowMultipleArguments" value="true" />
-      </properties>
-  </rule>
-  <rule ref="PEAR.Formatting.MultiLineAssignment" />
 </ruleset>
