@@ -21,6 +21,7 @@
     <exclude name="Generic.Arrays.DisallowShortArraySyntax" />
     <exclude name="Generic.WhiteSpace.DisallowSpaceIndent" />
     <exclude name="Generic.WhiteSpace.ScopeIndent" />
+    <exclude name="PEAR" />
     <exclude name="WordPress.PHP.DisallowShortTernary" />
     <exclude name="WordPress.WhiteSpace.PrecisionAlignment" />
   </rule>
