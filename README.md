@@ -26,6 +26,7 @@ Once this template is turned into a new repository, there are a few things you'l
 - On `package.json`:
   - Update the package `name` to be the client's theme slug.
   - Search `https://github.com/firstandthird/wordpress-template-2022` and replace it with the new repo's URL.
+  - Replace mentions of `ft_client_theme` and `ft-client-theme`
 
 Happy coding!
 
