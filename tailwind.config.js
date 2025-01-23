@@ -1,5 +1,5 @@
 const forms = require('@tailwindcss/forms');
-const lineClamp = require('@tailwindcss/line-clamp');
+// const lineClamp = require('@tailwindcss/line-clamp');
 const tailpress = require('@jeffreyvr/tailwindcss-tailpress');
 const clientTheme = require('./wp-content/themes/ft-client-theme/theme.json');
 
@@ -40,5 +40,9 @@ module.exports = {
       '2xl': '1536px',
     },
   },
-  plugins: [tailpress.tailwind, forms, lineClamp],
+  plugins: [
+
+    // tailpress.tailwind, forms, lineClamp
+
+  ],
 };
