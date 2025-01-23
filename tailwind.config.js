@@ -42,7 +42,7 @@ module.exports = {
   },
   plugins: [
 
-    // tailpress.tailwind, forms, lineClamp
+    tailpress.tailwind, forms
 
   ],
 };
