@@ -37,7 +37,6 @@
     "domodule": "^8.1.0"
   },
   "devDependencies": {
-    "@jeffreyvr/tailwindcss-tailpress": "^2.0.0",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/line-clamp": "^0.4.2",
     "autoprefixer": "^10.4.13",

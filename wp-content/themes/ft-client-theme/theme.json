@@ -7,7 +7,7 @@
     },
     "color": {
       "palette": [
-        {
+        { 
           "name": "Primary",
           "slug": "primary",
           "color": "#0EA5E9"
