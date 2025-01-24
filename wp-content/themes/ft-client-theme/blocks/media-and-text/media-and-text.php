@@ -62,7 +62,7 @@ $is_media_left = strpos($class_name, 'is-style-media-left') !== false;
        <div class="media-text-image">
           <?= wp_get_attachment_image(
             $image, 'large', false, array(
-            'class' => 'aspect-[3/2] object-cover object-center w-full h-auto'
+            'class' => 'aspect-3/2 object-cover object-center w-full h-auto'
             )
           ); ?>
        </div>
