@@ -38,7 +38,7 @@ wp_nav_menu(
       'container_class' => 'ft-navigation-block__inner',
       'menu_class'      => 'ft-navigation-block__list flex max-w-fit flex-wrap items-center justify-start gap-0',
       'theme_location'  => $menu_location,
-      'li_class'        => '!list-none',
+      'li_class'        => 'list-none!',
       'fallback_cb'     => false,
   )
 );

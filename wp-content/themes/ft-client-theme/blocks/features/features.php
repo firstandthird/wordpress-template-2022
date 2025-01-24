@@ -67,7 +67,7 @@ if ( ! empty($block['align']) ) {
         <h4 class="mb-2 font-bold"><?= esc_html($block_title) ?></h4>
         <?php endif;
         if (!empty($content)): ?>
-        <p class="!mb-0"><?= esc_html($content) ?></p>
+        <p class="mb-0!"><?= esc_html($content) ?></p>
         <?php endif;
         if (!empty($cta)): ?>
         <a href=<?= esc_url($cta['url']) ?> class="inline-block bg-black mt-2 px-4 py-2 text-white"><?= esc_html($cta['title']) ?></a>
