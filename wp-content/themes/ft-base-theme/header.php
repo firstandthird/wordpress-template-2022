@@ -67,7 +67,7 @@
         </div>
     </header>
 
-    <div id="content" class="site-content flex-grow">
+    <div id="content" class="site-content grow">
 
         <?php do_action('base_theme_content_start'); ?>
 

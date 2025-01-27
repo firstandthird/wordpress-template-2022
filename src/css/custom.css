@@ -4,7 +4,7 @@
 
 article > *:not(.entry-content),
 .entry-content > * {
-  @apply mx-auto max-w-content;
+  @apply mx-auto max-w-max;
 }
 
 .entry-content > .alignfull {

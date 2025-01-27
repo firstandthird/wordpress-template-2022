@@ -5,8 +5,6 @@ Welcome!
 This template contains all you need to start the next great First+Third project. Click **Use this template** and start hacking away!
 
 ## What's included
-
-- A base theme forked from [TailPress](https://tailpress.io/), providing frictionless [Tailwind CSS](https://tailwindcss.com/) support for scripts, styles, and templates.
 - Support for modern CSS and JS development syntax with [PostCSS](https://postcss.org/) and [ESBuild](https://esbuild.github.io/).
 - A no-nonsense, CLI-exclusive setup and build process.
 - [Docker](https://www.docker.com/) integration to keep local dependencies tight-knit.
@@ -81,22 +79,6 @@ Several things are handled during this step:
 ## Anatomy
 
 The template includes a base theme, an empty child theme, and a `src` folder for CSS, JS, and assets.
-
-### Base Theme
-
-The base theme extends [TailPress.io](https://tailpress.io/) with edits to the default configuration:
-
-- Includes `@tailwindcss/forms` and `@tailwindcss/line-clamp`
-- Remaps the TailPress breakpoints to the Tailwind defaults
-- Sets default body and header fonts
-
-TailPress directly integrates `theme.json` with the Tailwind configuration, allowing you to sync Gutenberg editor options with the website CSS.
-
-| theme.json | tailwind.config.js        |
-| :--------- | :------------------------ |
-| layout     | `lg` and `xl` breakpoints |
-| color      | colors                    |
-| typography | fontSize                  |
 
 ### Child Theme
 

@@ -21,10 +21,6 @@
     {
       "type":"composer",
       "url":"https://connect.advancedcustomfields.com"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/pronamic/gravityforms"
     }
   ],
   "require": {
@@ -34,8 +30,7 @@
     "wpackagist-plugin/wordpress-seo": "dev-trunk",
     "wpackagist-plugin/redirection": "dev-trunk",
     "wpackagist-plugin/acf-extended": "dev-trunk",
-    "wpengine/advanced-custom-fields-pro": "^6.0",
-    "pronamic/gravityforms": "2.6.8"
+    "wpengine/advanced-custom-fields-pro": "^6.0"
   },
   "require-dev": {
     "automattic/vipwpcs": "^2.3",

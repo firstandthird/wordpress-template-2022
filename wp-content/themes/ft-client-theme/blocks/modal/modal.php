@@ -1,4 +1,5 @@
 <?php
+
 /**
  * F+T Modal Block
  *
@@ -15,25 +16,24 @@ $content     = get_field('content');
 
 // Support custom "anchor" values.
 $anchor = '';
-if ( ! empty($block['anchor']) ) {
+if (! empty($block['anchor'])) {
   $anchor = esc_attr($block['anchor']);
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
 $class_name = 'ft-modal-block ft-blocks';
-if ( ! empty($block['className']) ) {
+if (! empty($block['className'])) {
   $class_name .= ' ' . $block['className'];
 }
-if ( ! empty($block['align']) ) {
+if (! empty($block['align'])) {
   $class_name .= ' align' . $block['align'];
 }
 
 ?>
 
 <div
- <?= esc_attr($anchor); ?>
- class="<?= esc_attr($class_name); ?> p-4 rounded bg-white shadow-md"
->
+  <?= esc_attr($anchor); ?>
+  class="<?= esc_attr($class_name); ?> p-4 rounded-sm bg-white shadow-md">
   <h2><?= esc_html($block_title) ?></h2>
   <?= wp_kses_post($content) ?>
 </div>

@@ -15,7 +15,7 @@ if ( ! empty($block['anchor']) ) {
 }
 
 // Create class attribute allowing for custom "className"
-$class_name = 'ft-card-block ft-blocks mx-auto mb-4 !max-w-xs shadow-md';
+$class_name = 'ft-card-block ft-blocks mx-auto mb-4 max-w-xs! shadow-md';
 if (!empty($block['className'])) {
   $class_name .= ' ' . $block['className'];
 }
