@@ -19,8 +19,8 @@
   "author": "First+Third",
   "scripts": {
     "build": "cross-env NODE_ENV=production concurrently \"npm run build:css-app\" \"npm run build:css-editor\" \"npm run build:js\"",
-    "build:css-app": "cross-env NODE_ENV=production tailwindcss -i ./src/css/app.css -o ./wp-content/themes/ft-client-theme/css/app.css --postcss --minify",
-    "build:css-editor": "cross-env NODE_ENV=production tailwindcss -i ./src/css/editor-style.css -o ./wp-content/themes/ft-client-theme/css/editor-style.css --postcss --minify",
+    "build:css-app": "cross-env NODE_ENV=production npx @tailwindcss/cli -i ./src/css/app.css -o ./wp-content/themes/ft-client-theme/css/app.css --postcss --minify",
+    "build:css-editor": "cross-env NODE_ENV=production npx @tailwindcss/cli -i ./src/css/editor-style.css -o ./wp-content/themes/ft-client-theme/css/editor-style.css --postcss --minify",
     "build:js": "cross-env NODE_ENV=production ./node_modules/.bin/esbuild ./src/js/app.js --bundle --outfile=./wp-content/themes/ft-client-theme/js/app.js --minify",
     "initialize:copy-env": "cp .env-example .env",
     "initialize": "npm run initialize:copy-env && npm run initialize:update && npm run build",
@@ -33,6 +33,8 @@
     "watch:js": "cross-env NODE_ENV=development ./node_modules/.bin/esbuild ./src/js/app.js --bundle --outfile=./wp-content/themes/ft-client-theme/js/app.js --watch"
   },
   "dependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "@tailwindcss/postcss": "^4.0.0",
     "domassist": "^2.3.1",
     "domodule": "^8.1.0"
   },
